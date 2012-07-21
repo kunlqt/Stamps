@@ -20,15 +20,14 @@
 		65560E1515BB403F00B214C1 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 65560DFA15BB403F00B214C1 /* CoreData.framework */; };
 		65560E1D15BB403F00B214C1 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 65560E1B15BB403F00B214C1 /* InfoPlist.strings */; };
 		65560E2015BB403F00B214C1 /* StampsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 65560E1F15BB403F00B214C1 /* StampsTests.m */; };
-		65B1B80A15BB41E5007542F8 /* QTMainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 65B1B80915BB41E5007542F8 /* QTMainViewController.m */; };
+		65AE391915BB890500E57D98 /* QTStampbookPageViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 65AE391815BB890500E57D98 /* QTStampbookPageViewController.xib */; };
+		65B1B80A15BB41E5007542F8 /* QTStampbookViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 65B1B80915BB41E5007542F8 /* QTStampbookViewController.m */; };
 		65B1B80D15BB4202007542F8 /* iPhoneStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 65B1B80C15BB4202007542F8 /* iPhoneStoryboard.storyboard */; };
-		65B1B81515BB44F0007542F8 /* CloseButton.png in Resources */ = {isa = PBXBuildFile; fileRef = 65B1B80E15BB44F0007542F8 /* CloseButton.png */; };
-		65B1B81615BB44F0007542F8 /* CloseButton@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 65B1B80F15BB44F0007542F8 /* CloseButton@2x.png */; };
-		65B1B81715BB44F0007542F8 /* MGTileMenuController.m in Sources */ = {isa = PBXBuildFile; fileRef = 65B1B81115BB44F0007542F8 /* MGTileMenuController.m */; };
-		65B1B81815BB44F0007542F8 /* MGTileMenuView.m in Sources */ = {isa = PBXBuildFile; fileRef = 65B1B81415BB44F0007542F8 /* MGTileMenuView.m */; };
-		65B1B83B15BB51D8007542F8 /* ellipsis@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 65B1B82B15BB51D8007542F8 /* ellipsis@2x.png */; };
 		65B1B84C15BB5547007542F8 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 65B1B84B15BB5547007542F8 /* QuartzCore.framework */; };
-		65B1B84E15BB57C6007542F8 /* QuiltIcon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 65B1B84D15BB57C6007542F8 /* QuiltIcon@2x.png */; };
+		65B1B85415BB5C0B007542F8 /* QTStampView.m in Sources */ = {isa = PBXBuildFile; fileRef = 65B1B85315BB5C0B007542F8 /* QTStampView.m */; };
+		65B1B86215BB5E46007542F8 /* QTStampView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 65B1B86115BB5E46007542F8 /* QTStampView.xib */; };
+		65B1B87915BB693E007542F8 /* QTStampbookPageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 65B1B87715BB693E007542F8 /* QTStampbookPageViewController.m */; };
+		65B1B87F15BB70BB007542F8 /* Stamp.m in Sources */ = {isa = PBXBuildFile; fileRef = 65B1B87E15BB70BB007542F8 /* Stamp.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -59,19 +58,18 @@
 		65560E1C15BB403F00B214C1 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		65560E1E15BB403F00B214C1 /* StampsTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = StampsTests.h; sourceTree = "<group>"; };
 		65560E1F15BB403F00B214C1 /* StampsTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = StampsTests.m; sourceTree = "<group>"; };
-		65B1B80815BB41E5007542F8 /* QTMainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QTMainViewController.h; sourceTree = "<group>"; };
-		65B1B80915BB41E5007542F8 /* QTMainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QTMainViewController.m; sourceTree = "<group>"; };
+		65AE391815BB890500E57D98 /* QTStampbookPageViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = QTStampbookPageViewController.xib; sourceTree = "<group>"; };
+		65B1B80815BB41E5007542F8 /* QTStampbookViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QTStampbookViewController.h; sourceTree = "<group>"; };
+		65B1B80915BB41E5007542F8 /* QTStampbookViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QTStampbookViewController.m; sourceTree = "<group>"; };
 		65B1B80C15BB4202007542F8 /* iPhoneStoryboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = iPhoneStoryboard.storyboard; sourceTree = "<group>"; };
-		65B1B80E15BB44F0007542F8 /* CloseButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = CloseButton.png; sourceTree = "<group>"; };
-		65B1B80F15BB44F0007542F8 /* CloseButton@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "CloseButton@2x.png"; sourceTree = "<group>"; };
-		65B1B81015BB44F0007542F8 /* MGTileMenuController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MGTileMenuController.h; sourceTree = "<group>"; };
-		65B1B81115BB44F0007542F8 /* MGTileMenuController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MGTileMenuController.m; sourceTree = "<group>"; };
-		65B1B81215BB44F0007542F8 /* MGTileMenuDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MGTileMenuDelegate.h; sourceTree = "<group>"; };
-		65B1B81315BB44F0007542F8 /* MGTileMenuView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MGTileMenuView.h; sourceTree = "<group>"; };
-		65B1B81415BB44F0007542F8 /* MGTileMenuView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MGTileMenuView.m; sourceTree = "<group>"; };
-		65B1B82B15BB51D8007542F8 /* ellipsis@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ellipsis@2x.png"; sourceTree = "<group>"; };
 		65B1B84B15BB5547007542F8 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
-		65B1B84D15BB57C6007542F8 /* QuiltIcon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "QuiltIcon@2x.png"; sourceTree = "<group>"; };
+		65B1B85215BB5C0B007542F8 /* QTStampView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QTStampView.h; sourceTree = "<group>"; };
+		65B1B85315BB5C0B007542F8 /* QTStampView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QTStampView.m; sourceTree = "<group>"; };
+		65B1B86115BB5E46007542F8 /* QTStampView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = QTStampView.xib; sourceTree = "<group>"; };
+		65B1B87615BB693E007542F8 /* QTStampbookPageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QTStampbookPageViewController.h; sourceTree = "<group>"; };
+		65B1B87715BB693E007542F8 /* QTStampbookPageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QTStampbookPageViewController.m; sourceTree = "<group>"; };
+		65B1B87D15BB70BB007542F8 /* Stamp.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Stamp.h; sourceTree = "<group>"; };
+		65B1B87E15BB70BB007542F8 /* Stamp.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Stamp.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -187,8 +185,9 @@
 		65B1B80715BB4172007542F8 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
-				65B1B80815BB41E5007542F8 /* QTMainViewController.h */,
-				65B1B80915BB41E5007542F8 /* QTMainViewController.m */,
+				65B1B84F15BB5BE2007542F8 /* View Controllers */,
+				65B1B85515BB5C0C007542F8 /* Views */,
+				65B1B88015BB70BC007542F8 /* Models */,
 			);
 			name = Classes;
 			sourceTree = "<group>";
@@ -197,40 +196,62 @@
 			isa = PBXGroup;
 			children = (
 				65B1B80C15BB4202007542F8 /* iPhoneStoryboard.storyboard */,
-				65B1B84D15BB57C6007542F8 /* QuiltIcon@2x.png */,
-				65B1B81915BB44F3007542F8 /* MGTileMenu */,
 			);
 			name = Resources;
-			sourceTree = "<group>";
-		};
-		65B1B81915BB44F3007542F8 /* MGTileMenu */ = {
-			isa = PBXGroup;
-			children = (
-				65B1B82B15BB51D8007542F8 /* ellipsis@2x.png */,
-				65B1B80E15BB44F0007542F8 /* CloseButton.png */,
-				65B1B80F15BB44F0007542F8 /* CloseButton@2x.png */,
-			);
-			name = MGTileMenu;
-			sourceTree = "<group>";
-		};
-		65B1B81A15BB44FA007542F8 /* MGTileMenu */ = {
-			isa = PBXGroup;
-			children = (
-				65B1B81015BB44F0007542F8 /* MGTileMenuController.h */,
-				65B1B81115BB44F0007542F8 /* MGTileMenuController.m */,
-				65B1B81215BB44F0007542F8 /* MGTileMenuDelegate.h */,
-				65B1B81315BB44F0007542F8 /* MGTileMenuView.h */,
-				65B1B81415BB44F0007542F8 /* MGTileMenuView.m */,
-			);
-			name = MGTileMenu;
 			sourceTree = "<group>";
 		};
 		65B1B81B15BB44FE007542F8 /* External Code */ = {
 			isa = PBXGroup;
 			children = (
-				65B1B81A15BB44FA007542F8 /* MGTileMenu */,
 			);
 			name = "External Code";
+			sourceTree = "<group>";
+		};
+		65B1B84F15BB5BE2007542F8 /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				65B1B87B15BB697B007542F8 /* Stampbook */,
+				65B1B87C15BB6981007542F8 /* Stampbook Page */,
+			);
+			name = "View Controllers";
+			sourceTree = "<group>";
+		};
+		65B1B85515BB5C0C007542F8 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				65B1B85215BB5C0B007542F8 /* QTStampView.h */,
+				65B1B85315BB5C0B007542F8 /* QTStampView.m */,
+				65B1B86115BB5E46007542F8 /* QTStampView.xib */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		65B1B87B15BB697B007542F8 /* Stampbook */ = {
+			isa = PBXGroup;
+			children = (
+				65B1B80815BB41E5007542F8 /* QTStampbookViewController.h */,
+				65B1B80915BB41E5007542F8 /* QTStampbookViewController.m */,
+			);
+			name = Stampbook;
+			sourceTree = "<group>";
+		};
+		65B1B87C15BB6981007542F8 /* Stampbook Page */ = {
+			isa = PBXGroup;
+			children = (
+				65B1B87615BB693E007542F8 /* QTStampbookPageViewController.h */,
+				65B1B87715BB693E007542F8 /* QTStampbookPageViewController.m */,
+				65AE391815BB890500E57D98 /* QTStampbookPageViewController.xib */,
+			);
+			name = "Stampbook Page";
+			sourceTree = "<group>";
+		};
+		65B1B88015BB70BC007542F8 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				65B1B87D15BB70BB007542F8 /* Stamp.h */,
+				65B1B87E15BB70BB007542F8 /* Stamp.m */,
+			);
+			name = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -307,10 +328,8 @@
 			files = (
 				65560E0115BB403F00B214C1 /* InfoPlist.strings in Resources */,
 				65B1B80D15BB4202007542F8 /* iPhoneStoryboard.storyboard in Resources */,
-				65B1B81515BB44F0007542F8 /* CloseButton.png in Resources */,
-				65B1B81615BB44F0007542F8 /* CloseButton@2x.png in Resources */,
-				65B1B83B15BB51D8007542F8 /* ellipsis@2x.png in Resources */,
-				65B1B84E15BB57C6007542F8 /* QuiltIcon@2x.png in Resources */,
+				65B1B86215BB5E46007542F8 /* QTStampView.xib in Resources */,
+				65AE391915BB890500E57D98 /* QTStampbookPageViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -347,9 +366,10 @@
 			files = (
 				65560E0315BB403F00B214C1 /* main.m in Sources */,
 				65560E0715BB403F00B214C1 /* QTAppDelegate.m in Sources */,
-				65B1B80A15BB41E5007542F8 /* QTMainViewController.m in Sources */,
-				65B1B81715BB44F0007542F8 /* MGTileMenuController.m in Sources */,
-				65B1B81815BB44F0007542F8 /* MGTileMenuView.m in Sources */,
+				65B1B80A15BB41E5007542F8 /* QTStampbookViewController.m in Sources */,
+				65B1B85415BB5C0B007542F8 /* QTStampView.m in Sources */,
+				65B1B87915BB693E007542F8 /* QTStampbookPageViewController.m in Sources */,
+				65B1B87F15BB70BB007542F8 /* Stamp.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
