@@ -1,5 +1,5 @@
 //
-//  QTAppDelegate.h
+//  QTMainViewController.h
 //  Stamps
 //
 //  Created by Daniel Byon on 7/21/12.
@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface QTAppDelegate : UIResponder <UIApplicationDelegate>
+@interface QTMainViewController : UIViewController
 
 @end

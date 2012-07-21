@@ -14,13 +14,14 @@
 		65560E0115BB403F00B214C1 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 65560DFF15BB403F00B214C1 /* InfoPlist.strings */; };
 		65560E0315BB403F00B214C1 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 65560E0215BB403F00B214C1 /* main.m */; };
 		65560E0715BB403F00B214C1 /* QTAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 65560E0615BB403F00B214C1 /* QTAppDelegate.m */; };
-		65560E0A15BB403F00B214C1 /* Stamps.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 65560E0815BB403F00B214C1 /* Stamps.xcdatamodeld */; };
 		65560E1215BB403F00B214C1 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 65560E1115BB403F00B214C1 /* SenTestingKit.framework */; };
 		65560E1315BB403F00B214C1 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 65560DF415BB403F00B214C1 /* UIKit.framework */; };
 		65560E1415BB403F00B214C1 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 65560DF615BB403F00B214C1 /* Foundation.framework */; };
 		65560E1515BB403F00B214C1 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 65560DFA15BB403F00B214C1 /* CoreData.framework */; };
 		65560E1D15BB403F00B214C1 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 65560E1B15BB403F00B214C1 /* InfoPlist.strings */; };
 		65560E2015BB403F00B214C1 /* StampsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 65560E1F15BB403F00B214C1 /* StampsTests.m */; };
+		65B1B80A15BB41E5007542F8 /* QTMainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 65B1B80915BB41E5007542F8 /* QTMainViewController.m */; };
+		65B1B80D15BB4202007542F8 /* iPhoneStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 65B1B80C15BB4202007542F8 /* iPhoneStoryboard.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,13 +46,15 @@
 		65560E0415BB403F00B214C1 /* Stamps-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Stamps-Prefix.pch"; sourceTree = "<group>"; };
 		65560E0515BB403F00B214C1 /* QTAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = QTAppDelegate.h; sourceTree = "<group>"; };
 		65560E0615BB403F00B214C1 /* QTAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = QTAppDelegate.m; sourceTree = "<group>"; };
-		65560E0915BB403F00B214C1 /* Stamps.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Stamps.xcdatamodel; sourceTree = "<group>"; };
 		65560E1015BB403F00B214C1 /* StampsTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = StampsTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
 		65560E1115BB403F00B214C1 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
 		65560E1A15BB403F00B214C1 /* StampsTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "StampsTests-Info.plist"; sourceTree = "<group>"; };
 		65560E1C15BB403F00B214C1 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		65560E1E15BB403F00B214C1 /* StampsTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = StampsTests.h; sourceTree = "<group>"; };
 		65560E1F15BB403F00B214C1 /* StampsTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = StampsTests.m; sourceTree = "<group>"; };
+		65B1B80815BB41E5007542F8 /* QTMainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QTMainViewController.h; sourceTree = "<group>"; };
+		65B1B80915BB41E5007542F8 /* QTMainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QTMainViewController.m; sourceTree = "<group>"; };
+		65B1B80C15BB4202007542F8 /* iPhoneStoryboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = iPhoneStoryboard.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -114,9 +117,9 @@
 		65560DFC15BB403F00B214C1 /* Stamps */ = {
 			isa = PBXGroup;
 			children = (
-				65560E0515BB403F00B214C1 /* QTAppDelegate.h */,
-				65560E0615BB403F00B214C1 /* QTAppDelegate.m */,
-				65560E0815BB403F00B214C1 /* Stamps.xcdatamodeld */,
+				65B1B80615BB416C007542F8 /* App Delegate */,
+				65B1B80715BB4172007542F8 /* Classes */,
+				65B1B80B15BB41ED007542F8 /* Resources */,
 				65560DFD15BB403F00B214C1 /* Supporting Files */,
 			);
 			path = Stamps;
@@ -150,6 +153,32 @@
 				65560E1B15BB403F00B214C1 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		65B1B80615BB416C007542F8 /* App Delegate */ = {
+			isa = PBXGroup;
+			children = (
+				65560E0515BB403F00B214C1 /* QTAppDelegate.h */,
+				65560E0615BB403F00B214C1 /* QTAppDelegate.m */,
+			);
+			name = "App Delegate";
+			sourceTree = "<group>";
+		};
+		65B1B80715BB4172007542F8 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				65B1B80815BB41E5007542F8 /* QTMainViewController.h */,
+				65B1B80915BB41E5007542F8 /* QTMainViewController.m */,
+			);
+			name = Classes;
+			sourceTree = "<group>";
+		};
+		65B1B80B15BB41ED007542F8 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				65B1B80C15BB4202007542F8 /* iPhoneStoryboard.storyboard */,
+			);
+			name = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -225,6 +254,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				65560E0115BB403F00B214C1 /* InfoPlist.strings in Resources */,
+				65B1B80D15BB4202007542F8 /* iPhoneStoryboard.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -261,7 +291,7 @@
 			files = (
 				65560E0315BB403F00B214C1 /* main.m in Sources */,
 				65560E0715BB403F00B214C1 /* QTAppDelegate.m in Sources */,
-				65560E0A15BB403F00B214C1 /* Stamps.xcdatamodeld in Sources */,
+				65B1B80A15BB41E5007542F8 /* QTMainViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -425,6 +455,7 @@
 				65560E2515BB403F00B214C1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		65560E2615BB403F00B214C1 /* Build configuration list for PBXNativeTarget "StampsTests" */ = {
 			isa = XCConfigurationList;
@@ -433,21 +464,9 @@
 				65560E2815BB403F00B214C1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
-
-/* Begin XCVersionGroup section */
-		65560E0815BB403F00B214C1 /* Stamps.xcdatamodeld */ = {
-			isa = XCVersionGroup;
-			children = (
-				65560E0915BB403F00B214C1 /* Stamps.xcdatamodel */,
-			);
-			currentVersion = 65560E0915BB403F00B214C1 /* Stamps.xcdatamodel */;
-			path = Stamps.xcdatamodeld;
-			sourceTree = "<group>";
-			versionGroupType = wrapper.xcdatamodel;
-		};
-/* End XCVersionGroup section */
 	};
 	rootObject = 65560DE715BB403F00B214C1 /* Project object */;
 }
