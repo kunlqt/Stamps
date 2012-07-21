@@ -7,7 +7,9 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <QuartzCore/QuartzCore.h>
+#import "MGTileMenuDelegate.h"
 
-@interface QTMainViewController : UIViewController
+@interface QTMainViewController : UIViewController <MGTileMenuDelegate>
 
 @end

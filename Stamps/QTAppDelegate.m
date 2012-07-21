@@ -9,6 +9,7 @@
 #import "QTAppDelegate.h"
 
 @implementation QTAppDelegate
+@synthesize window;
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {

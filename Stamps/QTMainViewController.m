@@ -7,20 +7,83 @@
 //
 
 #import "QTMainViewController.h"
+#import "MGTileMenuController.h"
+
+
+#define kNumberOfTiles 9
 
 
 @interface QTMainViewController ()
 
-- (void)setupUI;
+@property (nonatomic, strong) MGTileMenuController *tileMenu;
+
+- (void)setupGestureRecognizers;
+
+- (void)handleTap:(UITapGestureRecognizer *)gestureRecognizer;
+- (void)handleDoubleTap:(UITapGestureRecognizer *)gestureRecognizer;
 
 @end
 
 @implementation QTMainViewController
+@synthesize tileMenu;
 
 
-#pragma mark - UI Setup
-- (void)setupUI {
+#pragma mark - Gesture Recognizer Handlers
+- (void)handleTap:(UITapGestureRecognizer *)gestureRecognizer {
+    if (gestureRecognizer.state == UIGestureRecognizerStateEnded) {
+        if (tileMenu.isVisible && !CGRectContainsPoint(tileMenu.view.frame, [gestureRecognizer locationInView:self.view])) {
+            [tileMenu dismissMenu];
+        }
+    }
+}
+
+- (void)handleDoubleTap:(UITapGestureRecognizer *)gestureRecognizer {
+    if (gestureRecognizer.state == UIGestureRecognizerStateEnded) {
+        if (!tileMenu.isVisible) {
+            if (!tileMenu) {
+                tileMenu = [[MGTileMenuController alloc] initWithDelegate:self];
+                tileMenu.dismissAfterTileActivated = NO;
+            }
+            [tileMenu displayMenuCenteredOnPoint:[gestureRecognizer locationInView:self.view] inView:self.view];
+        }
+    }
+}
+
+
+#pragma mark - MGTileMenuDelegate
+- (NSInteger)numberOfTilesInMenu:(MGTileMenuController *)tileMenu {
+    return kNumberOfTiles;
+}
+
+- (UIImage *)imageForTile:(NSInteger)tileNumber inMenu:(MGTileMenuController *)tileMenu {
+	return [UIImage imageNamed:@"QuiltIcon"];
+}
+
+- (NSString *)labelForTile:(NSInteger)tileNumber inMenu:(MGTileMenuController *)tileMenu {
+    return nil;
+}
+
+- (NSString *)descriptionForTile:(NSInteger)tileNumber inMenu:(MGTileMenuController *)tileMenu {
+    return nil;
+}
+
+- (UIImage *)backgroundImageForTile:(NSInteger)tileNumber inMenu:(MGTileMenuController *)tileMenu {
+    return [UIImage imageNamed:@"grey_gradient"];
+}
+
+- (void)tileMenu:(MGTileMenuController *)tileMenu didActivateTile:(NSInteger)tileNumber {
+    NSLog(@"Tile %d activated", tileNumber);
+}
+
+
+#pragma mark - Setup
+- (void)setupGestureRecognizers {
+    UITapGestureRecognizer *tap = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(handleTap:)];
+    [self.view addGestureRecognizer:tap];
     
+    UITapGestureRecognizer *doubleTap = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(handleDoubleTap:)];
+    doubleTap.numberOfTapsRequired = 2;
+    [self.view addGestureRecognizer:doubleTap];
 }
 
 
@@ -38,7 +101,8 @@
 }
 
 - (void)viewDidLoad {
-    [self setupUI];
+    [self setupGestureRecognizers];
+    
     [super viewDidLoad];
 }
 
