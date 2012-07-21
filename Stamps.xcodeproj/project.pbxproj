@@ -1,0 +1,453 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		65560DF515BB403F00B214C1 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 65560DF415BB403F00B214C1 /* UIKit.framework */; };
+		65560DF715BB403F00B214C1 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 65560DF615BB403F00B214C1 /* Foundation.framework */; };
+		65560DF915BB403F00B214C1 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 65560DF815BB403F00B214C1 /* CoreGraphics.framework */; };
+		65560DFB15BB403F00B214C1 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 65560DFA15BB403F00B214C1 /* CoreData.framework */; };
+		65560E0115BB403F00B214C1 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 65560DFF15BB403F00B214C1 /* InfoPlist.strings */; };
+		65560E0315BB403F00B214C1 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 65560E0215BB403F00B214C1 /* main.m */; };
+		65560E0715BB403F00B214C1 /* QTAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 65560E0615BB403F00B214C1 /* QTAppDelegate.m */; };
+		65560E0A15BB403F00B214C1 /* Stamps.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 65560E0815BB403F00B214C1 /* Stamps.xcdatamodeld */; };
+		65560E1215BB403F00B214C1 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 65560E1115BB403F00B214C1 /* SenTestingKit.framework */; };
+		65560E1315BB403F00B214C1 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 65560DF415BB403F00B214C1 /* UIKit.framework */; };
+		65560E1415BB403F00B214C1 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 65560DF615BB403F00B214C1 /* Foundation.framework */; };
+		65560E1515BB403F00B214C1 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 65560DFA15BB403F00B214C1 /* CoreData.framework */; };
+		65560E1D15BB403F00B214C1 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 65560E1B15BB403F00B214C1 /* InfoPlist.strings */; };
+		65560E2015BB403F00B214C1 /* StampsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 65560E1F15BB403F00B214C1 /* StampsTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		65560E1615BB403F00B214C1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 65560DE715BB403F00B214C1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 65560DEF15BB403F00B214C1;
+			remoteInfo = Stamps;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		65560DF015BB403F00B214C1 /* Stamps.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Stamps.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		65560DF415BB403F00B214C1 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		65560DF615BB403F00B214C1 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		65560DF815BB403F00B214C1 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		65560DFA15BB403F00B214C1 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		65560DFE15BB403F00B214C1 /* Stamps-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Stamps-Info.plist"; sourceTree = "<group>"; };
+		65560E0015BB403F00B214C1 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		65560E0215BB403F00B214C1 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		65560E0415BB403F00B214C1 /* Stamps-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Stamps-Prefix.pch"; sourceTree = "<group>"; };
+		65560E0515BB403F00B214C1 /* QTAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = QTAppDelegate.h; sourceTree = "<group>"; };
+		65560E0615BB403F00B214C1 /* QTAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = QTAppDelegate.m; sourceTree = "<group>"; };
+		65560E0915BB403F00B214C1 /* Stamps.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Stamps.xcdatamodel; sourceTree = "<group>"; };
+		65560E1015BB403F00B214C1 /* StampsTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = StampsTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
+		65560E1115BB403F00B214C1 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
+		65560E1A15BB403F00B214C1 /* StampsTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "StampsTests-Info.plist"; sourceTree = "<group>"; };
+		65560E1C15BB403F00B214C1 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		65560E1E15BB403F00B214C1 /* StampsTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = StampsTests.h; sourceTree = "<group>"; };
+		65560E1F15BB403F00B214C1 /* StampsTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = StampsTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		65560DED15BB403F00B214C1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				65560DF515BB403F00B214C1 /* UIKit.framework in Frameworks */,
+				65560DF715BB403F00B214C1 /* Foundation.framework in Frameworks */,
+				65560DF915BB403F00B214C1 /* CoreGraphics.framework in Frameworks */,
+				65560DFB15BB403F00B214C1 /* CoreData.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		65560E0C15BB403F00B214C1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				65560E1215BB403F00B214C1 /* SenTestingKit.framework in Frameworks */,
+				65560E1315BB403F00B214C1 /* UIKit.framework in Frameworks */,
+				65560E1415BB403F00B214C1 /* Foundation.framework in Frameworks */,
+				65560E1515BB403F00B214C1 /* CoreData.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		65560DE515BB403F00B214C1 = {
+			isa = PBXGroup;
+			children = (
+				65560DFC15BB403F00B214C1 /* Stamps */,
+				65560E1815BB403F00B214C1 /* StampsTests */,
+				65560DF315BB403F00B214C1 /* Frameworks */,
+				65560DF115BB403F00B214C1 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		65560DF115BB403F00B214C1 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				65560DF015BB403F00B214C1 /* Stamps.app */,
+				65560E1015BB403F00B214C1 /* StampsTests.octest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		65560DF315BB403F00B214C1 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				65560DF415BB403F00B214C1 /* UIKit.framework */,
+				65560DF615BB403F00B214C1 /* Foundation.framework */,
+				65560DF815BB403F00B214C1 /* CoreGraphics.framework */,
+				65560DFA15BB403F00B214C1 /* CoreData.framework */,
+				65560E1115BB403F00B214C1 /* SenTestingKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		65560DFC15BB403F00B214C1 /* Stamps */ = {
+			isa = PBXGroup;
+			children = (
+				65560E0515BB403F00B214C1 /* QTAppDelegate.h */,
+				65560E0615BB403F00B214C1 /* QTAppDelegate.m */,
+				65560E0815BB403F00B214C1 /* Stamps.xcdatamodeld */,
+				65560DFD15BB403F00B214C1 /* Supporting Files */,
+			);
+			path = Stamps;
+			sourceTree = "<group>";
+		};
+		65560DFD15BB403F00B214C1 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				65560DFE15BB403F00B214C1 /* Stamps-Info.plist */,
+				65560DFF15BB403F00B214C1 /* InfoPlist.strings */,
+				65560E0215BB403F00B214C1 /* main.m */,
+				65560E0415BB403F00B214C1 /* Stamps-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		65560E1815BB403F00B214C1 /* StampsTests */ = {
+			isa = PBXGroup;
+			children = (
+				65560E1E15BB403F00B214C1 /* StampsTests.h */,
+				65560E1F15BB403F00B214C1 /* StampsTests.m */,
+				65560E1915BB403F00B214C1 /* Supporting Files */,
+			);
+			path = StampsTests;
+			sourceTree = "<group>";
+		};
+		65560E1915BB403F00B214C1 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				65560E1A15BB403F00B214C1 /* StampsTests-Info.plist */,
+				65560E1B15BB403F00B214C1 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		65560DEF15BB403F00B214C1 /* Stamps */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 65560E2315BB403F00B214C1 /* Build configuration list for PBXNativeTarget "Stamps" */;
+			buildPhases = (
+				65560DEC15BB403F00B214C1 /* Sources */,
+				65560DED15BB403F00B214C1 /* Frameworks */,
+				65560DEE15BB403F00B214C1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Stamps;
+			productName = Stamps;
+			productReference = 65560DF015BB403F00B214C1 /* Stamps.app */;
+			productType = "com.apple.product-type.application";
+		};
+		65560E0F15BB403F00B214C1 /* StampsTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 65560E2615BB403F00B214C1 /* Build configuration list for PBXNativeTarget "StampsTests" */;
+			buildPhases = (
+				65560E0B15BB403F00B214C1 /* Sources */,
+				65560E0C15BB403F00B214C1 /* Frameworks */,
+				65560E0D15BB403F00B214C1 /* Resources */,
+				65560E0E15BB403F00B214C1 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				65560E1715BB403F00B214C1 /* PBXTargetDependency */,
+			);
+			name = StampsTests;
+			productName = StampsTests;
+			productReference = 65560E1015BB403F00B214C1 /* StampsTests.octest */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		65560DE715BB403F00B214C1 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = QT;
+				LastUpgradeCheck = 0450;
+				ORGANIZATIONNAME = Quilt;
+			};
+			buildConfigurationList = 65560DEA15BB403F00B214C1 /* Build configuration list for PBXProject "Stamps" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 65560DE515BB403F00B214C1;
+			productRefGroup = 65560DF115BB403F00B214C1 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				65560DEF15BB403F00B214C1 /* Stamps */,
+				65560E0F15BB403F00B214C1 /* StampsTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		65560DEE15BB403F00B214C1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				65560E0115BB403F00B214C1 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		65560E0D15BB403F00B214C1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				65560E1D15BB403F00B214C1 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		65560E0E15BB403F00B214C1 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		65560DEC15BB403F00B214C1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				65560E0315BB403F00B214C1 /* main.m in Sources */,
+				65560E0715BB403F00B214C1 /* QTAppDelegate.m in Sources */,
+				65560E0A15BB403F00B214C1 /* Stamps.xcdatamodeld in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		65560E0B15BB403F00B214C1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				65560E2015BB403F00B214C1 /* StampsTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		65560E1715BB403F00B214C1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 65560DEF15BB403F00B214C1 /* Stamps */;
+			targetProxy = 65560E1615BB403F00B214C1 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		65560DFF15BB403F00B214C1 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				65560E0015BB403F00B214C1 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		65560E1B15BB403F00B214C1 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				65560E1C15BB403F00B214C1 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		65560E2115BB403F00B214C1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		65560E2215BB403F00B214C1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		65560E2415BB403F00B214C1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Stamps/Stamps-Prefix.pch";
+				INFOPLIST_FILE = "Stamps/Stamps-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		65560E2515BB403F00B214C1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Stamps/Stamps-Prefix.pch";
+				INFOPLIST_FILE = "Stamps/Stamps-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		65560E2715BB403F00B214C1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Stamps.app/Stamps";
+				FRAMEWORK_SEARCH_PATHS = (
+					"\"$(SDKROOT)/Developer/Library/Frameworks\"",
+					"\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Stamps/Stamps-Prefix.pch";
+				INFOPLIST_FILE = "StampsTests/StampsTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Debug;
+		};
+		65560E2815BB403F00B214C1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Stamps.app/Stamps";
+				FRAMEWORK_SEARCH_PATHS = (
+					"\"$(SDKROOT)/Developer/Library/Frameworks\"",
+					"\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Stamps/Stamps-Prefix.pch";
+				INFOPLIST_FILE = "StampsTests/StampsTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		65560DEA15BB403F00B214C1 /* Build configuration list for PBXProject "Stamps" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				65560E2115BB403F00B214C1 /* Debug */,
+				65560E2215BB403F00B214C1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		65560E2315BB403F00B214C1 /* Build configuration list for PBXNativeTarget "Stamps" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				65560E2415BB403F00B214C1 /* Debug */,
+				65560E2515BB403F00B214C1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		65560E2615BB403F00B214C1 /* Build configuration list for PBXNativeTarget "StampsTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				65560E2715BB403F00B214C1 /* Debug */,
+				65560E2815BB403F00B214C1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		65560E0815BB403F00B214C1 /* Stamps.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				65560E0915BB403F00B214C1 /* Stamps.xcdatamodel */,
+			);
+			currentVersion = 65560E0915BB403F00B214C1 /* Stamps.xcdatamodel */;
+			path = Stamps.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 65560DE715BB403F00B214C1 /* Project object */;
+}
