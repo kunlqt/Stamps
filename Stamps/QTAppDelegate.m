@@ -10,9 +10,44 @@
 
 @implementation QTAppDelegate
 @synthesize window;
+@synthesize liveClient;
 
 
+#pragma mark - Skydrive Authentication
+- (void)authCompleted:(LiveConnectSessionStatus) status
+              session:(LiveConnectSession *) session
+            userState:(id) userState
+{
+    if ([userState isEqual:@"initialize"])
+    {
+//        [self.infoLabel setText:@"Initialized."];
+        [self.liveClient login:self
+                        scopes:[NSArray arrayWithObjects:@"wl.signin", nil]
+                      delegate:self
+                     userState:@"signin"];
+    }
+    if ([userState isEqual:@"signin"])
+    {
+        if (session != nil)
+        {
+//            [self.infoLabel setText:@"Signed in."];
+        }
+    }
+}
+
+- (void)authFailed:(NSError *) error
+         userState:(id)userState
+{
+//    [self.infoLabel setText:[NSString stringWithFormat:@"Error: %@", [error localizedDescription]]];
+}
+
+
+#pragma mark - UIApplicationDelegate
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
+    self.liveClient = [[LiveConnectClient alloc] initWithClientId:@"000000004C0C5C04" delegate:self userState:@"initialize"];
+    [Parse setApplicationId:@"qWX6ogCHsgN5HzhZ31oUSABt27iHMP0kaV2w03wx"
+                  clientKey:@"4U4xif0nz8iWkK452pa9zDq7JEd8Y8nsO8vKYrpm"];
+    
     return YES;
 }
 

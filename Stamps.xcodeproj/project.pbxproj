@@ -52,6 +52,13 @@
 		658FA47115BBFBD600F15EFD /* qt_capture_review_bar@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 658FA46715BBFBD600F15EFD /* qt_capture_review_bar@2x.png */; };
 		658FA47415BC020E00F15EFD /* Accelerate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 658FA47315BC020E00F15EFD /* Accelerate.framework */; };
 		658FA47715BC1CCB00F15EFD /* NSCache+Shared.m in Sources */ = {isa = PBXBuildFile; fileRef = 658FA47615BC1CCA00F15EFD /* NSCache+Shared.m */; };
+		658FA48915BC632300F15EFD /* LiveSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 658FA48815BC632300F15EFD /* LiveSDK.framework */; };
+		658FA48A15BC632600F15EFD /* LiveSDK.framework in Resources */ = {isa = PBXBuildFile; fileRef = 658FA48815BC632300F15EFD /* LiveSDK.framework */; };
+		658FA49015BC654D00F15EFD /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 658FA48F15BC654D00F15EFD /* Parse.framework */; };
+		658FA49215BC664400F15EFD /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 658FA49115BC664400F15EFD /* Security.framework */; };
+		658FA49415BC666700F15EFD /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 658FA49315BC666700F15EFD /* CFNetwork.framework */; };
+		658FA49615BC668600F15EFD /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 658FA49515BC668600F15EFD /* SystemConfiguration.framework */; };
+		658FA49815BC66A100F15EFD /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 658FA49715BC66A100F15EFD /* AudioToolbox.framework */; };
 		65AE391915BB890500E57D98 /* QTStampbookPageViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 65AE391815BB890500E57D98 /* QTStampbookPageViewController.xib */; };
 		65B1B80A15BB41E5007542F8 /* QTStampbookViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 65B1B80915BB41E5007542F8 /* QTStampbookViewController.m */; };
 		65B1B80D15BB4202007542F8 /* iPhoneStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 65B1B80C15BB4202007542F8 /* iPhoneStoryboard.storyboard */; };
@@ -133,6 +140,12 @@
 		658FA47315BC020E00F15EFD /* Accelerate.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accelerate.framework; path = System/Library/Frameworks/Accelerate.framework; sourceTree = SDKROOT; };
 		658FA47515BC1CC600F15EFD /* NSCache+Shared.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSCache+Shared.h"; sourceTree = "<group>"; };
 		658FA47615BC1CCA00F15EFD /* NSCache+Shared.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSCache+Shared.m"; sourceTree = "<group>"; };
+		658FA48815BC632300F15EFD /* LiveSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = LiveSDK.framework; sourceTree = "<group>"; };
+		658FA48F15BC654D00F15EFD /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Parse.framework; sourceTree = "<group>"; };
+		658FA49115BC664400F15EFD /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		658FA49315BC666700F15EFD /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		658FA49515BC668600F15EFD /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		658FA49715BC66A100F15EFD /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
 		65AE391815BB890500E57D98 /* QTStampbookPageViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = QTStampbookPageViewController.xib; sourceTree = "<group>"; };
 		65B1B80815BB41E5007542F8 /* QTStampbookViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QTStampbookViewController.h; sourceTree = "<group>"; };
 		65B1B80915BB41E5007542F8 /* QTStampbookViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QTStampbookViewController.m; sourceTree = "<group>"; };
@@ -157,9 +170,13 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				658FA49815BC66A100F15EFD /* AudioToolbox.framework in Frameworks */,
+				658FA41415BBC2FB00F15EFD /* AVFoundation.framework in Frameworks */,
+				658FA49615BC668600F15EFD /* SystemConfiguration.framework in Frameworks */,
+				658FA49415BC666700F15EFD /* CFNetwork.framework in Frameworks */,
+				658FA49215BC664400F15EFD /* Security.framework in Frameworks */,
 				658FA47415BC020E00F15EFD /* Accelerate.framework in Frameworks */,
 				658FA41315BBC2FB00F15EFD /* AssetsLibrary.framework in Frameworks */,
-				658FA41415BBC2FB00F15EFD /* AVFoundation.framework in Frameworks */,
 				658FA41515BBC2FB00F15EFD /* CoreMedia.framework in Frameworks */,
 				658FA41615BBC2FB00F15EFD /* CoreVideo.framework in Frameworks */,
 				658FA41715BBC2FB00F15EFD /* ImageIO.framework in Frameworks */,
@@ -171,6 +188,8 @@
 				65560DF915BB403F00B214C1 /* CoreGraphics.framework in Frameworks */,
 				65560DFB15BB403F00B214C1 /* CoreData.framework in Frameworks */,
 				658FA45615BBFAFE00F15EFD /* libAviarySDK.a in Frameworks */,
+				658FA48915BC632300F15EFD /* LiveSDK.framework in Frameworks */,
+				658FA49015BC654D00F15EFD /* Parse.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -210,6 +229,12 @@
 		65560DF315BB403F00B214C1 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				658FA49715BC66A100F15EFD /* AudioToolbox.framework */,
+				658FA49515BC668600F15EFD /* SystemConfiguration.framework */,
+				658FA49315BC666700F15EFD /* CFNetwork.framework */,
+				658FA49115BC664400F15EFD /* Security.framework */,
+				658FA48F15BC654D00F15EFD /* Parse.framework */,
+				658FA48815BC632300F15EFD /* LiveSDK.framework */,
 				658FA47315BC020E00F15EFD /* Accelerate.framework */,
 				658FA40C15BBC2FB00F15EFD /* AssetsLibrary.framework */,
 				658FA40D15BBC2FB00F15EFD /* AVFoundation.framework */,
@@ -561,6 +586,7 @@
 				658FA46F15BBFBD600F15EFD /* qt_capture_button_edit@2x.png in Resources */,
 				658FA47015BBFBD600F15EFD /* qt_capture_review_bar.png in Resources */,
 				658FA47115BBFBD600F15EFD /* qt_capture_review_bar@2x.png in Resources */,
+				658FA48A15BC632600F15EFD /* LiveSDK.framework in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -701,6 +727,11 @@
 		65560E2415BB403F00B214C1 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/../../../../Downloads/liveservices-LiveSDK-for-iOS-0c0e0e2/bin\"",
+					"\"$(SRCROOT)\"",
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Stamps/Stamps-Prefix.pch";
 				INFOPLIST_FILE = "Stamps/Stamps-Info.plist";
@@ -716,6 +747,11 @@
 		65560E2515BB403F00B214C1 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/../../../../Downloads/liveservices-LiveSDK-for-iOS-0c0e0e2/bin\"",
+					"\"$(SRCROOT)\"",
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Stamps/Stamps-Prefix.pch";
 				INFOPLIST_FILE = "Stamps/Stamps-Info.plist";
