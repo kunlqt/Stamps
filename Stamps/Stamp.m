@@ -13,10 +13,12 @@
 @synthesize type = _type;
 @synthesize imageFilename = _imageFilename;
 @synthesize isCustom = _isCustom;
+@synthesize hasImage = _hasImage;
 
 
 #pragma mark - Stamp Types
 NSString * const QTStampTypeHappy = @"Happy";
+
 
 
 #pragma mark - NSCopying

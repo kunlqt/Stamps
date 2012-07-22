@@ -7,13 +7,16 @@
 //
 
 #import "QTStampbookViewController.h"
-#import "QTStampbookPageViewController.h"
 #import "Stamp.h"
+#import "QTBatchArrayCursor.h"
 
 
 @interface QTStampbookViewController ()
 
+@property (nonatomic, strong) UIPageViewController *pageController;
 @property (nonatomic, strong) NSArray *stampPages;
+
+- (IBAction)cancelButtonTapped:(id)sender;
 
 @end
 
@@ -21,6 +24,24 @@
 @implementation QTStampbookViewController
 @synthesize stamps = _stamps;
 @synthesize stampPages = _stampPages;
+
+
+#pragma mark - Actions
+- (IBAction)cancelButtonTapped:(id)sender {
+    [self.delegate stampbookDidCancel:self];
+}
+
+
+#pragma mark - QTStampbookPageDelegate
+- (void)stampbookPage:(QTStampbookPageViewController *)stampbookPage didSelectStamp:(Stamp *)stamp {
+    NSLog(@"stamp %d selected", [self.stamps indexOfObject:stamp] + 1);
+    
+    if ([stamp.hasImage boolValue]) {
+        [self.delegate stampbook:self didChooseImage:[UIImage imageNamed:stamp.imageFilename]];
+    } else {
+        // Show camera flow
+    }
+}
 
 
 #pragma mark - UIPageViewControllerDataSource
@@ -51,30 +72,28 @@
     }
 }
 
-- (void)awakeFromNib {
-    self.dataSource = self;
-    self.delegate = self;
-    
-    [super awakeFromNib];
-}
-
 - (void)viewDidLoad {
-    // For purposes of demo, ignore self.stamps and create them manually
-    NSMutableArray *pages = [NSMutableArray arrayWithCapacity:4];
-    for (int i = 0; i < 4; i++) {
-        // Create the stamps
-        NSMutableArray *stamps = [NSMutableArray arrayWithCapacity:6];
-        for (int i = 0; i < 6; i++) {
-            [stamps addObject:[[Stamp alloc] initWithType:QTStampTypeHappy imageFilename:@"" isCustom:NO]];
-        }
+    NSMutableArray *pages = [NSMutableArray arrayWithCapacity:ceil([self.stamps count] / 6.0f)];
+    QTBatchArrayCursor *cursor = [[QTBatchArrayCursor alloc] initWithArray:self.stamps batchSize:QTBatchArraySizeStamps];
+    while ([cursor hasNextBatch]) {
+        NSArray *batch = [cursor nextBatch];
         
-        QTStampbookPageViewController *page = [[QTStampbookPageViewController alloc] initWithStamps:stamps];
+        QTStampbookPageViewController *page = [[QTStampbookPageViewController alloc] initWithStamps:batch];
+        page.delegate = self;
         [pages addObject:page];
     }
     
     self.stampPages = pages;
     
-    [self setViewControllers:@[pages[0]] direction:UIPageViewControllerNavigationDirectionForward animated:NO completion:NULL];
+    self.pageController = [[UIPageViewController alloc] initWithTransitionStyle:UIPageViewControllerTransitionStylePageCurl navigationOrientation:UIPageViewControllerNavigationOrientationHorizontal options:nil];
+    self.pageController.view.frame = self.view.bounds;
+    self.pageController.dataSource = self;
+    self.pageController.delegate = self;
+    [self.pageController setViewControllers:@[self.stampPages[0]] direction:UIPageViewControllerNavigationDirectionForward animated:NO completion:NULL];
+    
+    [self addChildViewController:self.pageController];
+    [self.view addSubview:self.pageController.view];
+    [self.pageController didMoveToParentViewController:self];
     
     [super viewDidLoad];
 }

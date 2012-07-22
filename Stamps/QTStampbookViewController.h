@@ -7,10 +7,24 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "QTStampbookPageViewController.h"
 
-@interface QTStampbookViewController : UIPageViewController <UIPageViewControllerDataSource, UIPageViewControllerDelegate>
 
-// User will provide a list of stamps
+@protocol QTStampbookDelegate;
+
+
+@interface QTStampbookViewController : UIViewController <QTStampbookPageDelegate, UIPageViewControllerDataSource, UIPageViewControllerDelegate>
+
+// Client will provide a list of stamps
 @property (nonatomic, strong) NSArray *stamps;
+@property (nonatomic, weak) id <QTStampbookDelegate> delegate;
+
+@end
+
+
+@protocol QTStampbookDelegate <NSObject>
+@required
+- (void)stampbook:(QTStampbookViewController *)stampbook didChooseImage:(UIImage *)image;
+- (void)stampbookDidCancel:(QTStampbookViewController *)stampbook;
 
 @end

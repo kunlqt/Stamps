@@ -17,6 +17,7 @@
 @property (nonatomic, retain) NSString *type;
 @property (nonatomic, retain) NSString *imageFilename;
 @property (nonatomic, retain) NSNumber *isCustom;
+@property (nonatomic, strong) NSNumber *hasImage;
 
 extern NSString * const QTStampTypeHappy;
 

@@ -7,12 +7,25 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "QTStampView.h"
 
-@interface QTStampbookPageViewController : UIViewController
+
+@protocol QTStampbookPageDelegate;
+
+
+@interface QTStampbookPageViewController : UIViewController <QTStampViewDelegate>
 
 // Designated Initializer
 - (id)initWithStamps:(NSArray *)stamps;
 
 @property (nonatomic, strong) NSArray *stamps;
+@property (nonatomic, weak) id <QTStampbookPageDelegate> delegate;
+
+@end
+
+
+@protocol QTStampbookPageDelegate <NSObject>
+@required
+- (void)stampbookPage:(QTStampbookPageViewController *)stampbookPage didSelectStamp:(Stamp *)stamp;
 
 @end

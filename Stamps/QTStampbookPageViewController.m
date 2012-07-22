@@ -7,7 +7,6 @@
 //
 
 #import "QTStampbookPageViewController.h"
-#import "QTStampView.h"
 #import "Stamp.h"
 
 
@@ -20,6 +19,7 @@
 
 @implementation QTStampbookPageViewController
 @synthesize stamps = _stamps;
+@synthesize delegate = _delegate;
 
 
 #pragma mark - Overridden Setters
@@ -29,6 +29,16 @@
         
         [self layoutStampViews];
     }
+}
+
+
+#pragma mark - QTStampViewDelegate
+- (void)stampViewDidReceiveTap:(QTStampView *)stampView {
+    [self.delegate stampbookPage:self didSelectStamp:stampView.stamp];
+}
+
+- (void)stampViewDidReceiveLongPress:(QTStampView *)stampView {
+    NSLog(@"stamp %d received long press", [self.stamps indexOfObject:stampView.stamp]);
 }
 
 
@@ -46,6 +56,7 @@
     for (int i = 0; i < [self.stamps count]; i++) {
         Stamp *stamp = self.stamps[i];
         QTStampView *stampView = [[QTStampView alloc] initWithStamp:stamp];
+        stampView.delegate = self;
         
         CGRect frame;
         switch (i) {

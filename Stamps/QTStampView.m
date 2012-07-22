@@ -31,6 +31,9 @@ static inline UIImage * RandomColorImage(void) {
 @property (nonatomic, strong) IBOutlet UIImageView *imageView;
 @property (nonatomic, strong) IBOutlet UILabel *priceLabel;
 
+- (void)handleTap:(UITapGestureRecognizer *)gestureRecognizer;
+- (void)handleLongPress:(UILongPressGestureRecognizer *)gestureRecognizer;
+
 - (void)updateViews;
 
 @end
@@ -38,6 +41,7 @@ static inline UIImage * RandomColorImage(void) {
 
 @implementation QTStampView
 @synthesize stamp = _stamp;
+@synthesize delegate = _delegate;
 @synthesize imageView = _imageView;
 @synthesize priceLabel = _priceLabel;
 
@@ -54,12 +58,52 @@ static inline UIImage * RandomColorImage(void) {
 
 #pragma mark - Object Lifecycle
 - (id)initWithStamp:(Stamp *)stamp {
-    UINib *nib = [UINib nibWithNibName:NSStringFromClass([self class]) bundle:nil];
-    self = [[nib instantiateWithOwner:nil options:nil] objectAtIndex:0];
+    self = [self init];
     if (self) {
         self.stamp = stamp;
     }
     return self;
+}
+
+- (id)init {
+    UINib *nib = [UINib nibWithNibName:NSStringFromClass([self class]) bundle:nil];
+    self = [[nib instantiateWithOwner:nil options:nil] objectAtIndex:0];
+    if (self) {
+        UITapGestureRecognizer *tap = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(handleTap:)];
+        [self addGestureRecognizer:tap];
+        
+        UILongPressGestureRecognizer *longPress = [[UILongPressGestureRecognizer alloc] initWithTarget:self action:@selector(handleLongPress:)];
+        [self addGestureRecognizer:longPress];
+    }
+    return self;
+}
+
+- (id)initWithCoder:(NSCoder *)aDecoder {
+    self = [super initWithCoder:aDecoder];
+    if (self) {
+        UITapGestureRecognizer *tap = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(handleTap:)];
+        [self addGestureRecognizer:tap];
+        
+        UILongPressGestureRecognizer *longPress = [[UILongPressGestureRecognizer alloc] initWithTarget:self action:@selector(handleLongPress:)];
+        [self addGestureRecognizer:longPress];
+    }
+    return self;
+}
+
+- (id)initWithFrame:(CGRect)frame {
+    return [self init];
+}
+
+
+#pragma mark - Gesture Recognizers
+- (void)handleTap:(UITapGestureRecognizer *)gestureRecognizer {
+    [self.delegate stampViewDidReceiveTap:self];
+}
+
+- (void)handleLongPress:(UILongPressGestureRecognizer *)gestureRecognizer {
+    if ([self.delegate respondsToSelector:@selector(stampViewDidReceiveLongPress:)]) {
+        [self.delegate performSelector:@selector(stampViewDidReceiveLongPress:) withObject:self];
+    }
 }
 
 

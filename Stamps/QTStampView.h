@@ -10,10 +10,24 @@
 #import "Stamp.h"
 
 
+@protocol QTStampViewDelegate;
+
+
 @interface QTStampView : UIView
 
 @property (nonatomic, strong) Stamp *stamp;
+@property (nonatomic, weak) id <QTStampViewDelegate> delegate;
 
 - (id)initWithStamp:(Stamp *)stamp;
+
+@end
+
+
+@protocol QTStampViewDelegate <NSObject>
+@required
+- (void)stampViewDidReceiveTap:(QTStampView *)stampView;
+
+@optional
+- (void)stampViewDidReceiveLongPress:(QTStampView *)stampView;
 
 @end

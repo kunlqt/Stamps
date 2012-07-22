@@ -28,6 +28,8 @@
 		65B1B86215BB5E46007542F8 /* QTStampView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 65B1B86115BB5E46007542F8 /* QTStampView.xib */; };
 		65B1B87915BB693E007542F8 /* QTStampbookPageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 65B1B87715BB693E007542F8 /* QTStampbookPageViewController.m */; };
 		65B1B87F15BB70BB007542F8 /* Stamp.m in Sources */ = {isa = PBXBuildFile; fileRef = 65B1B87E15BB70BB007542F8 /* Stamp.m */; };
+		65C5A11E15BB96980030FFD7 /* QTMainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 65C5A11D15BB96980030FFD7 /* QTMainViewController.m */; };
+		65C5A12415BB9A940030FFD7 /* QTBatchArrayCursor.m in Sources */ = {isa = PBXBuildFile; fileRef = 65C5A12315BB9A940030FFD7 /* QTBatchArrayCursor.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -70,6 +72,11 @@
 		65B1B87715BB693E007542F8 /* QTStampbookPageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QTStampbookPageViewController.m; sourceTree = "<group>"; };
 		65B1B87D15BB70BB007542F8 /* Stamp.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Stamp.h; sourceTree = "<group>"; };
 		65B1B87E15BB70BB007542F8 /* Stamp.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Stamp.m; sourceTree = "<group>"; };
+		65C5A11C15BB96980030FFD7 /* QTMainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QTMainViewController.h; sourceTree = "<group>"; };
+		65C5A11D15BB96980030FFD7 /* QTMainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QTMainViewController.m; sourceTree = "<group>"; };
+		65C5A12115BB97040030FFD7 /* Constants.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Constants.h; sourceTree = "<group>"; };
+		65C5A12215BB9A940030FFD7 /* QTBatchArrayCursor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QTBatchArrayCursor.h; sourceTree = "<group>"; };
+		65C5A12315BB9A940030FFD7 /* QTBatchArrayCursor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QTBatchArrayCursor.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -136,6 +143,7 @@
 			children = (
 				65B1B80615BB416C007542F8 /* App Delegate */,
 				65B1B80715BB4172007542F8 /* Classes */,
+				65C5A12515BB9A960030FFD7 /* External Code */,
 				65B1B80B15BB41ED007542F8 /* Resources */,
 				65560DFD15BB403F00B214C1 /* Supporting Files */,
 			);
@@ -187,6 +195,7 @@
 				65B1B84F15BB5BE2007542F8 /* View Controllers */,
 				65B1B85515BB5C0C007542F8 /* Views */,
 				65B1B88015BB70BC007542F8 /* Models */,
+				65C5A12115BB97040030FFD7 /* Constants.h */,
 			);
 			name = Classes;
 			sourceTree = "<group>";
@@ -202,6 +211,7 @@
 		65B1B84F15BB5BE2007542F8 /* View Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				65C5A12015BB969A0030FFD7 /* Main View */,
 				65B1B87B15BB697B007542F8 /* Stampbook */,
 				65B1B87C15BB6981007542F8 /* Stampbook Page */,
 			);
@@ -244,6 +254,24 @@
 				65B1B87E15BB70BB007542F8 /* Stamp.m */,
 			);
 			name = Models;
+			sourceTree = "<group>";
+		};
+		65C5A12015BB969A0030FFD7 /* Main View */ = {
+			isa = PBXGroup;
+			children = (
+				65C5A11C15BB96980030FFD7 /* QTMainViewController.h */,
+				65C5A11D15BB96980030FFD7 /* QTMainViewController.m */,
+			);
+			name = "Main View";
+			sourceTree = "<group>";
+		};
+		65C5A12515BB9A960030FFD7 /* External Code */ = {
+			isa = PBXGroup;
+			children = (
+				65C5A12215BB9A940030FFD7 /* QTBatchArrayCursor.h */,
+				65C5A12315BB9A940030FFD7 /* QTBatchArrayCursor.m */,
+			);
+			name = "External Code";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -362,6 +390,8 @@
 				65B1B85415BB5C0B007542F8 /* QTStampView.m in Sources */,
 				65B1B87915BB693E007542F8 /* QTStampbookPageViewController.m in Sources */,
 				65B1B87F15BB70BB007542F8 /* Stamp.m in Sources */,
+				65C5A11E15BB96980030FFD7 /* QTMainViewController.m in Sources */,
+				65C5A12415BB9A940030FFD7 /* QTBatchArrayCursor.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
