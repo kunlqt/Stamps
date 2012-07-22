@@ -4,10 +4,10 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="1900"/>
     </dependencies>
     <scenes>
-        <!--Main View Controller - Stampbook Demo-->
+        <!--Main View Controller - QTMainViewController-->
         <scene sceneID="WL2-dG-tlF">
             <objects>
-                <viewController id="DXf-yK-Oq0" customClass="QTMainViewController" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="QTMainViewController" title="QTMainViewController" id="DXf-yK-Oq0" customClass="QTMainViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="FoA-0H-XVG">
                         <rect key="frame" x="0.0" y="64" width="320" height="416"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -50,10 +50,10 @@
             </objects>
             <point key="canvasLocation" x="1208" y="74"/>
         </scene>
-        <!--Stampbook View Controller - Stampbook-->
+        <!--Stampbook View Controller - QTStampbookViewController-->
         <scene sceneID="E01-Y8-9dn">
             <objects>
-                <viewController id="B8b-FK-tVh" customClass="QTStampbookViewController" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="QTStampbookViewController" title="QTStampbookViewController" id="B8b-FK-tVh" customClass="QTStampbookViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="3Gb-O7-xei">
                         <rect key="frame" x="0.0" y="64" width="320" height="416"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>

@@ -20,10 +20,33 @@
 NSString * const QTStampTypeHappy = @"Happy";
 
 
+#pragma mark - NSCoding
+- (id)initWithCoder:(NSCoder *)aDecoder {
+    NSString *identifier = [aDecoder decodeObjectForKey:@"identifier"];
+    NSString *type = [aDecoder decodeObjectForKey:@"type"];
+    NSString *imageFilename = [aDecoder decodeObjectForKey:@"imageFilename"];
+    NSNumber *isCustom = [aDecoder decodeObjectForKey:@"isCustom"];
+    NSNumber *hasImage = [aDecoder decodeObjectForKey:@"hasImage"];
+    self = [self initWithType:type imageFilename:imageFilename isCustom:[isCustom boolValue]];
+    self.identifier = identifier;
+    self.hasImage = hasImage;
+    return self;
+}
+
+- (void)encodeWithCoder:(NSCoder *)aCoder {
+    [aCoder encodeObject:self.identifier forKey:@"identifier"];
+    [aCoder encodeObject:self.type forKey:@"type"];
+    [aCoder encodeObject:self.imageFilename forKey:@"imageFilename"];
+    [aCoder encodeObject:self.isCustom forKey:@"isCustom"];
+    [aCoder encodeObject:self.hasImage forKey:@"hasImage"];
+}
+
 
 #pragma mark - NSCopying
 - (id)copyWithZone:(NSZone *)zone {
     Stamp *stamp = [[Stamp alloc] initWithType:self.type imageFilename:self.imageFilename isCustom:[self.isCustom boolValue]];
+    stamp.identifier = self.identifier;
+    stamp.hasImage = self.hasImage;
     return stamp;
 }
 
@@ -56,7 +79,7 @@ NSString * const QTStampTypeHappy = @"Happy";
         return NO;
     }
     Stamp *stamp = (Stamp *)object;
-    return [self.identifier isEqual:stamp.identifier];
+    return [self.identifier isEqualToString:stamp.identifier];
 }
 
 

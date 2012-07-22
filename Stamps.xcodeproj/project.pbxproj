@@ -20,6 +20,38 @@
 		65560E1515BB403F00B214C1 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 65560DFA15BB403F00B214C1 /* CoreData.framework */; };
 		65560E1D15BB403F00B214C1 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 65560E1B15BB403F00B214C1 /* InfoPlist.strings */; };
 		65560E2015BB403F00B214C1 /* StampsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 65560E1F15BB403F00B214C1 /* StampsTests.m */; };
+		658FA3F115BBAE0000F15EFD /* QTDefaultStampView.m in Sources */ = {isa = PBXBuildFile; fileRef = 658FA3F015BBAE0000F15EFD /* QTDefaultStampView.m */; };
+		658FA3F415BBAE0B00F15EFD /* QTDefaultStampView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 658FA3F315BBAE0B00F15EFD /* QTDefaultStampView.xib */; };
+		658FA41315BBC2FB00F15EFD /* AssetsLibrary.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 658FA40C15BBC2FB00F15EFD /* AssetsLibrary.framework */; };
+		658FA41415BBC2FB00F15EFD /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 658FA40D15BBC2FB00F15EFD /* AVFoundation.framework */; };
+		658FA41515BBC2FB00F15EFD /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 658FA40E15BBC2FB00F15EFD /* CoreMedia.framework */; };
+		658FA41615BBC2FB00F15EFD /* CoreVideo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 658FA40F15BBC2FB00F15EFD /* CoreVideo.framework */; };
+		658FA41715BBC2FB00F15EFD /* ImageIO.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 658FA41015BBC2FB00F15EFD /* ImageIO.framework */; };
+		658FA41815BBC2FB00F15EFD /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 658FA41115BBC2FB00F15EFD /* MediaPlayer.framework */; };
+		658FA41915BBC2FB00F15EFD /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 658FA41215BBC2FB00F15EFD /* MobileCoreServices.framework */; };
+		658FA41E15BBC65100F15EFD /* QTNewStampOverlayView.m in Sources */ = {isa = PBXBuildFile; fileRef = 658FA41D15BBC65100F15EFD /* QTNewStampOverlayView.m */; };
+		658FA42A15BBCB4D00F15EFD /* QTNewStampOverlayView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 658FA42915BBCB4D00F15EFD /* QTNewStampOverlayView.xib */; };
+		658FA42D15BBF34300F15EFD /* CloseButton.png in Resources */ = {isa = PBXBuildFile; fileRef = 658FA42B15BBF34300F15EFD /* CloseButton.png */; };
+		658FA42E15BBF34300F15EFD /* CloseButton@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 658FA42C15BBF34300F15EFD /* CloseButton@2x.png */; };
+		658FA43115BBF9A700F15EFD /* UIImage+Resize.m in Sources */ = {isa = PBXBuildFile; fileRef = 658FA43015BBF9A700F15EFD /* UIImage+Resize.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		658FA43415BBF9CD00F15EFD /* UIImage+RoundedCorner.m in Sources */ = {isa = PBXBuildFile; fileRef = 658FA43315BBF9CD00F15EFD /* UIImage+RoundedCorner.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		658FA43715BBF9D800F15EFD /* UIImage+Alpha.m in Sources */ = {isa = PBXBuildFile; fileRef = 658FA43615BBF9D800F15EFD /* UIImage+Alpha.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		658FA43B15BBFA6E00F15EFD /* ConfirmImageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 658FA43915BBFA6D00F15EFD /* ConfirmImageViewController.m */; };
+		658FA43C15BBFA6E00F15EFD /* ConfirmImageViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 658FA43A15BBFA6D00F15EFD /* ConfirmImageViewController.xib */; };
+		658FA45615BBFAFE00F15EFD /* libAviarySDK.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 658FA45315BBFAFE00F15EFD /* libAviarySDK.a */; };
+		658FA45715BBFAFE00F15EFD /* AviarySDKResources.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 658FA45515BBFAFE00F15EFD /* AviarySDKResources.bundle */; };
+		658FA46815BBFBD600F15EFD /* qt_capture_button_accept.png in Resources */ = {isa = PBXBuildFile; fileRef = 658FA45E15BBFBD600F15EFD /* qt_capture_button_accept.png */; };
+		658FA46915BBFBD600F15EFD /* qt_capture_button_accept@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 658FA45F15BBFBD600F15EFD /* qt_capture_button_accept@2x.png */; };
+		658FA46A15BBFBD600F15EFD /* qt_capture_button_cancel.png in Resources */ = {isa = PBXBuildFile; fileRef = 658FA46015BBFBD600F15EFD /* qt_capture_button_cancel.png */; };
+		658FA46B15BBFBD600F15EFD /* qt_capture_button_cancel@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 658FA46115BBFBD600F15EFD /* qt_capture_button_cancel@2x.png */; };
+		658FA46C15BBFBD600F15EFD /* qt_capture_button_edit_on.png in Resources */ = {isa = PBXBuildFile; fileRef = 658FA46215BBFBD600F15EFD /* qt_capture_button_edit_on.png */; };
+		658FA46D15BBFBD600F15EFD /* qt_capture_button_edit_on@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 658FA46315BBFBD600F15EFD /* qt_capture_button_edit_on@2x.png */; };
+		658FA46E15BBFBD600F15EFD /* qt_capture_button_edit.png in Resources */ = {isa = PBXBuildFile; fileRef = 658FA46415BBFBD600F15EFD /* qt_capture_button_edit.png */; };
+		658FA46F15BBFBD600F15EFD /* qt_capture_button_edit@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 658FA46515BBFBD600F15EFD /* qt_capture_button_edit@2x.png */; };
+		658FA47015BBFBD600F15EFD /* qt_capture_review_bar.png in Resources */ = {isa = PBXBuildFile; fileRef = 658FA46615BBFBD600F15EFD /* qt_capture_review_bar.png */; };
+		658FA47115BBFBD600F15EFD /* qt_capture_review_bar@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 658FA46715BBFBD600F15EFD /* qt_capture_review_bar@2x.png */; };
+		658FA47415BC020E00F15EFD /* Accelerate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 658FA47315BC020E00F15EFD /* Accelerate.framework */; };
+		658FA47715BC1CCB00F15EFD /* NSCache+Shared.m in Sources */ = {isa = PBXBuildFile; fileRef = 658FA47615BC1CCA00F15EFD /* NSCache+Shared.m */; };
 		65AE391915BB890500E57D98 /* QTStampbookPageViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 65AE391815BB890500E57D98 /* QTStampbookPageViewController.xib */; };
 		65B1B80A15BB41E5007542F8 /* QTStampbookViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 65B1B80915BB41E5007542F8 /* QTStampbookViewController.m */; };
 		65B1B80D15BB4202007542F8 /* iPhoneStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 65B1B80C15BB4202007542F8 /* iPhoneStoryboard.storyboard */; };
@@ -60,6 +92,47 @@
 		65560E1C15BB403F00B214C1 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		65560E1E15BB403F00B214C1 /* StampsTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = StampsTests.h; sourceTree = "<group>"; };
 		65560E1F15BB403F00B214C1 /* StampsTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = StampsTests.m; sourceTree = "<group>"; };
+		658FA3EF15BBAE0000F15EFD /* QTDefaultStampView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QTDefaultStampView.h; sourceTree = "<group>"; };
+		658FA3F015BBAE0000F15EFD /* QTDefaultStampView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QTDefaultStampView.m; sourceTree = "<group>"; };
+		658FA3F315BBAE0B00F15EFD /* QTDefaultStampView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = QTDefaultStampView.xib; sourceTree = "<group>"; };
+		658FA40C15BBC2FB00F15EFD /* AssetsLibrary.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AssetsLibrary.framework; path = System/Library/Frameworks/AssetsLibrary.framework; sourceTree = SDKROOT; };
+		658FA40D15BBC2FB00F15EFD /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		658FA40E15BBC2FB00F15EFD /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = System/Library/Frameworks/CoreMedia.framework; sourceTree = SDKROOT; };
+		658FA40F15BBC2FB00F15EFD /* CoreVideo.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreVideo.framework; path = System/Library/Frameworks/CoreVideo.framework; sourceTree = SDKROOT; };
+		658FA41015BBC2FB00F15EFD /* ImageIO.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ImageIO.framework; path = System/Library/Frameworks/ImageIO.framework; sourceTree = SDKROOT; };
+		658FA41115BBC2FB00F15EFD /* MediaPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaPlayer.framework; path = System/Library/Frameworks/MediaPlayer.framework; sourceTree = SDKROOT; };
+		658FA41215BBC2FB00F15EFD /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
+		658FA41C15BBC65100F15EFD /* QTNewStampOverlayView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QTNewStampOverlayView.h; sourceTree = "<group>"; };
+		658FA41D15BBC65100F15EFD /* QTNewStampOverlayView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QTNewStampOverlayView.m; sourceTree = "<group>"; };
+		658FA42915BBCB4D00F15EFD /* QTNewStampOverlayView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = QTNewStampOverlayView.xib; sourceTree = "<group>"; };
+		658FA42B15BBF34300F15EFD /* CloseButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = CloseButton.png; sourceTree = "<group>"; };
+		658FA42C15BBF34300F15EFD /* CloseButton@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "CloseButton@2x.png"; sourceTree = "<group>"; };
+		658FA42F15BBF9A700F15EFD /* UIImage+Resize.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+Resize.h"; sourceTree = "<group>"; };
+		658FA43015BBF9A700F15EFD /* UIImage+Resize.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Resize.m"; sourceTree = "<group>"; };
+		658FA43215BBF9CD00F15EFD /* UIImage+RoundedCorner.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+RoundedCorner.h"; sourceTree = "<group>"; };
+		658FA43315BBF9CD00F15EFD /* UIImage+RoundedCorner.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+RoundedCorner.m"; sourceTree = "<group>"; };
+		658FA43515BBF9D800F15EFD /* UIImage+Alpha.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+Alpha.h"; sourceTree = "<group>"; };
+		658FA43615BBF9D800F15EFD /* UIImage+Alpha.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Alpha.m"; sourceTree = "<group>"; };
+		658FA43815BBFA6D00F15EFD /* ConfirmImageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ConfirmImageViewController.h; sourceTree = "<group>"; };
+		658FA43915BBFA6D00F15EFD /* ConfirmImageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ConfirmImageViewController.m; sourceTree = "<group>"; };
+		658FA43A15BBFA6D00F15EFD /* ConfirmImageViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ConfirmImageViewController.xib; sourceTree = "<group>"; };
+		658FA45115BBFAFE00F15EFD /* AFPhotoEditorController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFPhotoEditorController.h; sourceTree = "<group>"; };
+		658FA45215BBFAFE00F15EFD /* AFPhotoEditorControllerOptions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFPhotoEditorControllerOptions.h; sourceTree = "<group>"; };
+		658FA45315BBFAFE00F15EFD /* libAviarySDK.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libAviarySDK.a; sourceTree = "<group>"; };
+		658FA45515BBFAFE00F15EFD /* AviarySDKResources.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = AviarySDKResources.bundle; sourceTree = "<group>"; };
+		658FA45E15BBFBD600F15EFD /* qt_capture_button_accept.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = qt_capture_button_accept.png; sourceTree = "<group>"; };
+		658FA45F15BBFBD600F15EFD /* qt_capture_button_accept@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "qt_capture_button_accept@2x.png"; sourceTree = "<group>"; };
+		658FA46015BBFBD600F15EFD /* qt_capture_button_cancel.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = qt_capture_button_cancel.png; sourceTree = "<group>"; };
+		658FA46115BBFBD600F15EFD /* qt_capture_button_cancel@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "qt_capture_button_cancel@2x.png"; sourceTree = "<group>"; };
+		658FA46215BBFBD600F15EFD /* qt_capture_button_edit_on.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = qt_capture_button_edit_on.png; sourceTree = "<group>"; };
+		658FA46315BBFBD600F15EFD /* qt_capture_button_edit_on@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "qt_capture_button_edit_on@2x.png"; sourceTree = "<group>"; };
+		658FA46415BBFBD600F15EFD /* qt_capture_button_edit.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = qt_capture_button_edit.png; sourceTree = "<group>"; };
+		658FA46515BBFBD600F15EFD /* qt_capture_button_edit@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "qt_capture_button_edit@2x.png"; sourceTree = "<group>"; };
+		658FA46615BBFBD600F15EFD /* qt_capture_review_bar.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = qt_capture_review_bar.png; sourceTree = "<group>"; };
+		658FA46715BBFBD600F15EFD /* qt_capture_review_bar@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "qt_capture_review_bar@2x.png"; sourceTree = "<group>"; };
+		658FA47315BC020E00F15EFD /* Accelerate.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accelerate.framework; path = System/Library/Frameworks/Accelerate.framework; sourceTree = SDKROOT; };
+		658FA47515BC1CC600F15EFD /* NSCache+Shared.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSCache+Shared.h"; sourceTree = "<group>"; };
+		658FA47615BC1CCA00F15EFD /* NSCache+Shared.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSCache+Shared.m"; sourceTree = "<group>"; };
 		65AE391815BB890500E57D98 /* QTStampbookPageViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = QTStampbookPageViewController.xib; sourceTree = "<group>"; };
 		65B1B80815BB41E5007542F8 /* QTStampbookViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QTStampbookViewController.h; sourceTree = "<group>"; };
 		65B1B80915BB41E5007542F8 /* QTStampbookViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QTStampbookViewController.m; sourceTree = "<group>"; };
@@ -84,11 +157,20 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				658FA47415BC020E00F15EFD /* Accelerate.framework in Frameworks */,
+				658FA41315BBC2FB00F15EFD /* AssetsLibrary.framework in Frameworks */,
+				658FA41415BBC2FB00F15EFD /* AVFoundation.framework in Frameworks */,
+				658FA41515BBC2FB00F15EFD /* CoreMedia.framework in Frameworks */,
+				658FA41615BBC2FB00F15EFD /* CoreVideo.framework in Frameworks */,
+				658FA41715BBC2FB00F15EFD /* ImageIO.framework in Frameworks */,
+				658FA41815BBC2FB00F15EFD /* MediaPlayer.framework in Frameworks */,
+				658FA41915BBC2FB00F15EFD /* MobileCoreServices.framework in Frameworks */,
 				65B1B84C15BB5547007542F8 /* QuartzCore.framework in Frameworks */,
 				65560DF515BB403F00B214C1 /* UIKit.framework in Frameworks */,
 				65560DF715BB403F00B214C1 /* Foundation.framework in Frameworks */,
 				65560DF915BB403F00B214C1 /* CoreGraphics.framework in Frameworks */,
 				65560DFB15BB403F00B214C1 /* CoreData.framework in Frameworks */,
+				658FA45615BBFAFE00F15EFD /* libAviarySDK.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -128,6 +210,14 @@
 		65560DF315BB403F00B214C1 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				658FA47315BC020E00F15EFD /* Accelerate.framework */,
+				658FA40C15BBC2FB00F15EFD /* AssetsLibrary.framework */,
+				658FA40D15BBC2FB00F15EFD /* AVFoundation.framework */,
+				658FA40E15BBC2FB00F15EFD /* CoreMedia.framework */,
+				658FA40F15BBC2FB00F15EFD /* CoreVideo.framework */,
+				658FA41015BBC2FB00F15EFD /* ImageIO.framework */,
+				658FA41115BBC2FB00F15EFD /* MediaPlayer.framework */,
+				658FA41215BBC2FB00F15EFD /* MobileCoreServices.framework */,
 				65B1B84B15BB5547007542F8 /* QuartzCore.framework */,
 				65560DF415BB403F00B214C1 /* UIKit.framework */,
 				65560DF615BB403F00B214C1 /* Foundation.framework */,
@@ -180,6 +270,101 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		658FA3F815BBB1B500F15EFD /* Confirm Stamp */ = {
+			isa = PBXGroup;
+			children = (
+				658FA43815BBFA6D00F15EFD /* ConfirmImageViewController.h */,
+				658FA43915BBFA6D00F15EFD /* ConfirmImageViewController.m */,
+				658FA43A15BBFA6D00F15EFD /* ConfirmImageViewController.xib */,
+			);
+			name = "Confirm Stamp";
+			sourceTree = "<group>";
+		};
+		658FA3F915BBB1B900F15EFD /* Stamp Creation */ = {
+			isa = PBXGroup;
+			children = (
+				658FA41F15BBC67E00F15EFD /* Camera Overlay View */,
+				658FA3F815BBB1B500F15EFD /* Confirm Stamp */,
+			);
+			name = "Stamp Creation";
+			sourceTree = "<group>";
+		};
+		658FA40A15BBC14200F15EFD /* Quilt */ = {
+			isa = PBXGroup;
+			children = (
+				65C5A12215BB9A940030FFD7 /* QTBatchArrayCursor.h */,
+				65C5A12315BB9A940030FFD7 /* QTBatchArrayCursor.m */,
+			);
+			name = Quilt;
+			sourceTree = "<group>";
+		};
+		658FA41F15BBC67E00F15EFD /* Camera Overlay View */ = {
+			isa = PBXGroup;
+			children = (
+				658FA41C15BBC65100F15EFD /* QTNewStampOverlayView.h */,
+				658FA41D15BBC65100F15EFD /* QTNewStampOverlayView.m */,
+				658FA42915BBCB4D00F15EFD /* QTNewStampOverlayView.xib */,
+			);
+			name = "Camera Overlay View";
+			sourceTree = "<group>";
+		};
+		658FA44F15BBFAFE00F15EFD /* AviarySDK */ = {
+			isa = PBXGroup;
+			children = (
+				658FA45015BBFAFE00F15EFD /* Headers */,
+				658FA45315BBFAFE00F15EFD /* libAviarySDK.a */,
+				658FA45415BBFAFE00F15EFD /* Resources */,
+			);
+			path = AviarySDK;
+			sourceTree = "<group>";
+		};
+		658FA45015BBFAFE00F15EFD /* Headers */ = {
+			isa = PBXGroup;
+			children = (
+				658FA45115BBFAFE00F15EFD /* AFPhotoEditorController.h */,
+				658FA45215BBFAFE00F15EFD /* AFPhotoEditorControllerOptions.h */,
+			);
+			path = Headers;
+			sourceTree = "<group>";
+		};
+		658FA45415BBFAFE00F15EFD /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				658FA45515BBFAFE00F15EFD /* AviarySDKResources.bundle */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		658FA45D15BBFB5100F15EFD /* UIImage Categories */ = {
+			isa = PBXGroup;
+			children = (
+				658FA43515BBF9D800F15EFD /* UIImage+Alpha.h */,
+				658FA43615BBF9D800F15EFD /* UIImage+Alpha.m */,
+				658FA42F15BBF9A700F15EFD /* UIImage+Resize.h */,
+				658FA43015BBF9A700F15EFD /* UIImage+Resize.m */,
+				658FA43215BBF9CD00F15EFD /* UIImage+RoundedCorner.h */,
+				658FA43315BBF9CD00F15EFD /* UIImage+RoundedCorner.m */,
+			);
+			name = "UIImage Categories";
+			sourceTree = "<group>";
+		};
+		658FA47215BBFBD900F15EFD /* Quilt */ = {
+			isa = PBXGroup;
+			children = (
+				658FA45E15BBFBD600F15EFD /* qt_capture_button_accept.png */,
+				658FA45F15BBFBD600F15EFD /* qt_capture_button_accept@2x.png */,
+				658FA46015BBFBD600F15EFD /* qt_capture_button_cancel.png */,
+				658FA46115BBFBD600F15EFD /* qt_capture_button_cancel@2x.png */,
+				658FA46215BBFBD600F15EFD /* qt_capture_button_edit_on.png */,
+				658FA46315BBFBD600F15EFD /* qt_capture_button_edit_on@2x.png */,
+				658FA46415BBFBD600F15EFD /* qt_capture_button_edit.png */,
+				658FA46515BBFBD600F15EFD /* qt_capture_button_edit@2x.png */,
+				658FA46615BBFBD600F15EFD /* qt_capture_review_bar.png */,
+				658FA46715BBFBD600F15EFD /* qt_capture_review_bar@2x.png */,
+			);
+			name = Quilt;
+			sourceTree = "<group>";
+		};
 		65B1B80615BB416C007542F8 /* App Delegate */ = {
 			isa = PBXGroup;
 			children = (
@@ -196,6 +381,8 @@
 				65B1B85515BB5C0C007542F8 /* Views */,
 				65B1B88015BB70BC007542F8 /* Models */,
 				65C5A12115BB97040030FFD7 /* Constants.h */,
+				658FA47515BC1CC600F15EFD /* NSCache+Shared.h */,
+				658FA47615BC1CCA00F15EFD /* NSCache+Shared.m */,
 			);
 			name = Classes;
 			sourceTree = "<group>";
@@ -204,6 +391,9 @@
 			isa = PBXGroup;
 			children = (
 				65B1B80C15BB4202007542F8 /* iPhoneStoryboard.storyboard */,
+				658FA42B15BBF34300F15EFD /* CloseButton.png */,
+				658FA42C15BBF34300F15EFD /* CloseButton@2x.png */,
+				658FA47215BBFBD900F15EFD /* Quilt */,
 			);
 			name = Resources;
 			sourceTree = "<group>";
@@ -214,6 +404,7 @@
 				65C5A12015BB969A0030FFD7 /* Main View */,
 				65B1B87B15BB697B007542F8 /* Stampbook */,
 				65B1B87C15BB6981007542F8 /* Stampbook Page */,
+				658FA3F915BBB1B900F15EFD /* Stamp Creation */,
 			);
 			name = "View Controllers";
 			sourceTree = "<group>";
@@ -224,6 +415,9 @@
 				65B1B85215BB5C0B007542F8 /* QTStampView.h */,
 				65B1B85315BB5C0B007542F8 /* QTStampView.m */,
 				65B1B86115BB5E46007542F8 /* QTStampView.xib */,
+				658FA3EF15BBAE0000F15EFD /* QTDefaultStampView.h */,
+				658FA3F015BBAE0000F15EFD /* QTDefaultStampView.m */,
+				658FA3F315BBAE0B00F15EFD /* QTDefaultStampView.xib */,
 			);
 			name = Views;
 			sourceTree = "<group>";
@@ -268,8 +462,9 @@
 		65C5A12515BB9A960030FFD7 /* External Code */ = {
 			isa = PBXGroup;
 			children = (
-				65C5A12215BB9A940030FFD7 /* QTBatchArrayCursor.h */,
-				65C5A12315BB9A940030FFD7 /* QTBatchArrayCursor.m */,
+				658FA44F15BBFAFE00F15EFD /* AviarySDK */,
+				658FA40A15BBC14200F15EFD /* Quilt */,
+				658FA45D15BBFB5100F15EFD /* UIImage Categories */,
 			);
 			name = "External Code";
 			sourceTree = "<group>";
@@ -350,6 +545,22 @@
 				65B1B80D15BB4202007542F8 /* iPhoneStoryboard.storyboard in Resources */,
 				65B1B86215BB5E46007542F8 /* QTStampView.xib in Resources */,
 				65AE391915BB890500E57D98 /* QTStampbookPageViewController.xib in Resources */,
+				658FA3F415BBAE0B00F15EFD /* QTDefaultStampView.xib in Resources */,
+				658FA42A15BBCB4D00F15EFD /* QTNewStampOverlayView.xib in Resources */,
+				658FA42D15BBF34300F15EFD /* CloseButton.png in Resources */,
+				658FA42E15BBF34300F15EFD /* CloseButton@2x.png in Resources */,
+				658FA43C15BBFA6E00F15EFD /* ConfirmImageViewController.xib in Resources */,
+				658FA45715BBFAFE00F15EFD /* AviarySDKResources.bundle in Resources */,
+				658FA46815BBFBD600F15EFD /* qt_capture_button_accept.png in Resources */,
+				658FA46915BBFBD600F15EFD /* qt_capture_button_accept@2x.png in Resources */,
+				658FA46A15BBFBD600F15EFD /* qt_capture_button_cancel.png in Resources */,
+				658FA46B15BBFBD600F15EFD /* qt_capture_button_cancel@2x.png in Resources */,
+				658FA46C15BBFBD600F15EFD /* qt_capture_button_edit_on.png in Resources */,
+				658FA46D15BBFBD600F15EFD /* qt_capture_button_edit_on@2x.png in Resources */,
+				658FA46E15BBFBD600F15EFD /* qt_capture_button_edit.png in Resources */,
+				658FA46F15BBFBD600F15EFD /* qt_capture_button_edit@2x.png in Resources */,
+				658FA47015BBFBD600F15EFD /* qt_capture_review_bar.png in Resources */,
+				658FA47115BBFBD600F15EFD /* qt_capture_review_bar@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -392,6 +603,13 @@
 				65B1B87F15BB70BB007542F8 /* Stamp.m in Sources */,
 				65C5A11E15BB96980030FFD7 /* QTMainViewController.m in Sources */,
 				65C5A12415BB9A940030FFD7 /* QTBatchArrayCursor.m in Sources */,
+				658FA3F115BBAE0000F15EFD /* QTDefaultStampView.m in Sources */,
+				658FA41E15BBC65100F15EFD /* QTNewStampOverlayView.m in Sources */,
+				658FA43115BBF9A700F15EFD /* UIImage+Resize.m in Sources */,
+				658FA43415BBF9CD00F15EFD /* UIImage+RoundedCorner.m in Sources */,
+				658FA43715BBF9D800F15EFD /* UIImage+Alpha.m in Sources */,
+				658FA43B15BBFA6E00F15EFD /* ConfirmImageViewController.m in Sources */,
+				658FA47715BC1CCB00F15EFD /* NSCache+Shared.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -486,6 +704,10 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Stamps/Stamps-Prefix.pch";
 				INFOPLIST_FILE = "Stamps/Stamps-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/Stamps/AviarySDK\"",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -497,6 +719,10 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Stamps/Stamps-Prefix.pch";
 				INFOPLIST_FILE = "Stamps/Stamps-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/Stamps/AviarySDK\"",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};

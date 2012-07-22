@@ -10,5 +10,6 @@
 #define Stamps_Constants_h
 
 #define kChooseStampSegue (@"ChooseStampSegue")
+#define kNewStampSegue (@"NewStampSegue")
 
 #endif

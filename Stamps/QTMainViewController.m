@@ -11,11 +11,13 @@
 @interface QTMainViewController ()
 
 @property (nonatomic, weak) IBOutlet UIImageView *imageView;
+@property (nonatomic, strong) NSMutableArray *stamps;
 
 @end
 
 @implementation QTMainViewController
 @synthesize imageView;
+@synthesize stamps;
 
 
 #pragma mark - QTStampbookDelegate
@@ -37,12 +39,9 @@
         QTStampbookViewController *controller = [segue destinationViewController];
         controller.delegate = self;
         
-        // Create the stamps
-        NSMutableArray *stamps = [NSMutableArray arrayWithCapacity:6];
-        for (int i = 0; i < 24; i++) {
-            [stamps addObject:[[Stamp alloc] initWithType:QTStampTypeHappy imageFilename:@"" isCustom:NO]];
+        if (!controller.stamps) {
+            controller.stamps = self.stamps;
         }
-        controller.stamps = stamps;
     }
 }
 
@@ -52,7 +51,11 @@
 }
 
 - (void)viewDidLoad {
-    
+    self.stamps = [NSMutableArray arrayWithCapacity:6];
+    for (int i = 0; i < 24; i++) {
+        [self.stamps addObject:[[Stamp alloc] initWithType:QTStampTypeHappy imageFilename:@"" isCustom:NO]];
+    }
+    self.stamps = stamps;
     [super viewDidLoad];
 }
 

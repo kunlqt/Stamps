@@ -9,7 +9,7 @@
 #import <Foundation/Foundation.h>
 
 
-@interface Stamp : NSObject <NSCopying>
+@interface Stamp : NSObject <NSCoding, NSCopying>
 
 - (id)initWithType:(NSString *)type imageFilename:(NSString *)imageFilename isCustom:(BOOL)isCustom;
 

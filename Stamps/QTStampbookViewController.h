@@ -8,12 +8,13 @@
 
 #import <UIKit/UIKit.h>
 #import "QTStampbookPageViewController.h"
+#import "ConfirmImageViewController.h"
 
 
 @protocol QTStampbookDelegate;
 
 
-@interface QTStampbookViewController : UIViewController <QTStampbookPageDelegate, UIPageViewControllerDataSource, UIPageViewControllerDelegate>
+@interface QTStampbookViewController : UIViewController <QTConfirmImageDelegate, QTStampbookPageDelegate, UIImagePickerControllerDelegate, UINavigationControllerDelegate, UIPageViewControllerDataSource, UIPageViewControllerDelegate>
 
 // Client will provide a list of stamps
 @property (nonatomic, strong) NSArray *stamps;

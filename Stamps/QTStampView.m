@@ -29,7 +29,7 @@ static inline UIImage * RandomColorImage(void) {
 @interface QTStampView ()
 
 @property (nonatomic, strong) IBOutlet UIImageView *imageView;
-@property (nonatomic, strong) IBOutlet UILabel *priceLabel;
+@property (nonatomic, strong) IBOutlet UILabel *typeLabel;
 
 - (void)handleTap:(UITapGestureRecognizer *)gestureRecognizer;
 - (void)handleLongPress:(UILongPressGestureRecognizer *)gestureRecognizer;
@@ -43,7 +43,7 @@ static inline UIImage * RandomColorImage(void) {
 @synthesize stamp = _stamp;
 @synthesize delegate = _delegate;
 @synthesize imageView = _imageView;
-@synthesize priceLabel = _priceLabel;
+@synthesize typeLabel = _typeLabel;
 
 
 #pragma mark - Overridden Setters
@@ -68,13 +68,6 @@ static inline UIImage * RandomColorImage(void) {
 - (id)init {
     UINib *nib = [UINib nibWithNibName:NSStringFromClass([self class]) bundle:nil];
     self = [[nib instantiateWithOwner:nil options:nil] objectAtIndex:0];
-    if (self) {
-        UITapGestureRecognizer *tap = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(handleTap:)];
-        [self addGestureRecognizer:tap];
-        
-        UILongPressGestureRecognizer *longPress = [[UILongPressGestureRecognizer alloc] initWithTarget:self action:@selector(handleLongPress:)];
-        [self addGestureRecognizer:longPress];
-    }
     return self;
 }
 
@@ -109,13 +102,13 @@ static inline UIImage * RandomColorImage(void) {
 
 #pragma mark - View Handling
 - (void)updateViews {
-    UIImage *image = [UIImage imageNamed:self.stamp.imageFilename];
+    UIImage *image = [[NSCache shared] objectForKey:self.stamp.imageFilename];
     if (!image) {
         image = RandomColorImage();
     }
     self.imageView.image = image;
     
-    self.priceLabel.text = @""; // blank for now
+    self.typeLabel.text = self.stamp.type;
 }
 
 

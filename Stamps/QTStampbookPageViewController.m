@@ -7,6 +7,7 @@
 //
 
 #import "QTStampbookPageViewController.h"
+#import "QTDefaultStampView.h"
 #import "Stamp.h"
 
 
@@ -55,7 +56,12 @@
     
     for (int i = 0; i < [self.stamps count]; i++) {
         Stamp *stamp = self.stamps[i];
-        QTStampView *stampView = [[QTStampView alloc] initWithStamp:stamp];
+        QTStampView *stampView;
+        if ([stamp.hasImage boolValue]) {
+            stampView = [[QTStampView alloc] initWithStamp:stamp];
+        } else {
+            stampView = [[QTDefaultStampView alloc] initWithStamp:stamp];
+        }
         stampView.delegate = self;
         
         CGRect frame;
