@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 #import "QTStampbookPageViewController.h"
-#import "ConfirmImageViewController.h"
+#import "QTConfirmImageViewController.h"
 
 
 @protocol QTStampbookDelegate;

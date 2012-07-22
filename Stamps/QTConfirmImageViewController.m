@@ -6,11 +6,11 @@
 //  Copyright (c) 2012 Nerd Swagger Inc. All rights reserved.
 //
 
-#import "ConfirmImageViewController.h"
+#import "QTConfirmImageViewController.h"
 #import "AFPhotoEditorController.h"
 
 
-@interface ConfirmImageViewController ()
+@interface QTConfirmImageViewController ()
 
 @property (nonatomic, weak) IBOutlet UIImageView *imageView;
 
@@ -21,7 +21,7 @@
 @end
 
 
-@implementation ConfirmImageViewController
+@implementation QTConfirmImageViewController
 @synthesize image = image_;
 @synthesize delegate = delegate_;
 @synthesize imageView = imageView_;

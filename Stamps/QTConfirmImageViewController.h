@@ -13,7 +13,7 @@
 @protocol QTConfirmImageDelegate;
 
 
-@interface ConfirmImageViewController : UIViewController <AFPhotoEditorControllerDelegate> {
+@interface QTConfirmImageViewController : UIViewController <AFPhotoEditorControllerDelegate> {
     @private
     UIImage *image_;
     __weak id <QTConfirmImageDelegate> delegate_;
@@ -29,7 +29,7 @@
 
 @protocol QTConfirmImageDelegate <NSObject>
 @required
-- (void)confirmImage:(ConfirmImageViewController *)controller didConfirmImage:(UIImage *)image;
-- (void)confirmImageDidCancel:(ConfirmImageViewController *)controller;
+- (void)confirmImage:(QTConfirmImageViewController *)controller didConfirmImage:(UIImage *)image;
+- (void)confirmImageDidCancel:(QTConfirmImageViewController *)controller;
 
 @end
