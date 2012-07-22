@@ -78,7 +78,7 @@
 }
 
 - (void)confirmImage:(UIImage *)image {
-    ConfirmImageViewController *controller = [[ConfirmImageViewController alloc] init];
+    QTConfirmImageViewController *controller = [[QTConfirmImageViewController alloc] init];
     controller.image = image;
     controller.delegate = self;
     [self.navigationController pushViewController:controller animated:YES];
@@ -86,7 +86,7 @@
 
 
 #pragma mark - QTConfirmImageDelegate
-- (void)confirmImage:(ConfirmImageViewController *)controller didConfirmImage:(UIImage *)image {
+- (void)confirmImage:(QTConfirmImageViewController *)controller didConfirmImage:(UIImage *)image {
     [self.navigationController popToViewController:self animated:YES];
     
     NSString *filename = [NSString stringWithFormat:@"%d", arc4random()];
@@ -108,7 +108,7 @@
     _pendingFilename = nil;
 }
 
-- (void)confirmImageDidCancel:(ConfirmImageViewController *)controller {
+- (void)confirmImageDidCancel:(QTConfirmImageViewController *)controller {
     [self.navigationController popToViewController:self animated:YES];
     _pendingFilename = nil;
 }
