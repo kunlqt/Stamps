@@ -17,7 +17,12 @@
 
 
 #pragma mark - Stamp Types
-NSString * const QTStampTypeHappy = @"Happy";
+NSString * const QTStampTypeSmile = @"smile";
+NSString * const QTStampTypeFrown = @"frown";
+NSString * const QTStampTypeMeh = @"meh";
+NSString * const QTStampTypeShocked = @"shocked";
+NSString * const QTStampTypeFlirt = @"flirt";
+NSString * const QTStampTypeCustom = @"custom";
 
 
 #pragma mark - NSCoding

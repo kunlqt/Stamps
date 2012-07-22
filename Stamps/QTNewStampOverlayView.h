@@ -12,4 +12,6 @@
 
 @property (nonatomic, strong) NSString *type;
 
+- (void)setTypePrompt;
+
 @end

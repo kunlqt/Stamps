@@ -19,6 +19,11 @@
 @property (nonatomic, retain) NSNumber *isCustom;
 @property (nonatomic, strong) NSNumber *hasImage;
 
-extern NSString * const QTStampTypeHappy;
+extern NSString * const QTStampTypeSmile;
+extern NSString * const QTStampTypeFrown;
+extern NSString * const QTStampTypeMeh;
+extern NSString * const QTStampTypeShocked;
+extern NSString * const QTStampTypeFlirt;
+extern NSString * const QTStampTypeCustom;
 
 @end

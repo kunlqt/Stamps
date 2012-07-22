@@ -51,9 +51,32 @@
 }
 
 - (void)viewDidLoad {
-    self.stamps = [NSMutableArray arrayWithCapacity:6];
-    for (int i = 0; i < 24; i++) {
-        [self.stamps addObject:[[Stamp alloc] initWithType:QTStampTypeHappy imageFilename:@"" isCustom:NO]];
+    self.stamps = [NSMutableArray arrayWithCapacity:12];
+    for (int i = 0; i < 12; i++) {
+        switch (i) {
+            case 0:
+                [self.stamps addObject:[[Stamp alloc] initWithType:QTStampTypeSmile imageFilename:@"" isCustom:NO]];
+                break;
+            case 1:
+                [self.stamps addObject:[[Stamp alloc] initWithType:QTStampTypeFrown imageFilename:@"" isCustom:NO]];
+                break;
+            case 2:
+                [self.stamps addObject:[[Stamp alloc] initWithType:QTStampTypeMeh imageFilename:@"" isCustom:NO]];
+                break;
+            case 3:
+                [self.stamps addObject:[[Stamp alloc] initWithType:QTStampTypeShocked imageFilename:@"" isCustom:NO]];
+                break;
+            case 4:
+                [self.stamps addObject:[[Stamp alloc] initWithType:QTStampTypeFlirt imageFilename:@"" isCustom:NO]];
+                break;
+            case 5:
+                [self.stamps addObject:[[Stamp alloc] initWithType:QTStampTypeCustom imageFilename:@"" isCustom:NO]];
+                break;
+            default:
+                [self.stamps addObject:[[Stamp alloc] initWithType:QTStampTypeCustom imageFilename:@"" isCustom:NO]];
+        }
+        
+        
     }
     self.stamps = stamps;
     [super viewDidLoad];

@@ -9,26 +9,27 @@
 #import "QTStampView.h"
 
 
-static inline UIImage * RandomColorImage(void) {
-    CGRect frame = CGRectMake(0.0f, 0.0f, 3.0f, 3.0f);
-    UIGraphicsBeginImageContextWithOptions(frame.size, YES, 0.0f);
-    CGContextRef context = UIGraphicsGetCurrentContext();
-    
-    CGFloat red = (arc4random() % 256) / 255.0f;
-    CGFloat green = (arc4random() % 256) / 255.0f;
-    CGFloat blue = (arc4random() % 256) / 255.0f;
-    [[UIColor colorWithRed:red green:green blue:blue alpha:1.0f] set];
-    
-    CGContextFillRect(context, frame);
-    UIImage *image = UIGraphicsGetImageFromCurrentImageContext();
-    UIGraphicsEndImageContext();
-    return [image resizableImageWithCapInsets:UIEdgeInsetsMake(1.0f, 1.0f, 1.0f, 1.0f)];
-}
+//static inline UIImage * RandomColorImage(void) {
+//    CGRect frame = CGRectMake(0.0f, 0.0f, 3.0f, 3.0f);
+//    UIGraphicsBeginImageContextWithOptions(frame.size, YES, 0.0f);
+//    CGContextRef context = UIGraphicsGetCurrentContext();
+//    
+//    CGFloat red = (arc4random() % 256) / 255.0f;
+//    CGFloat green = (arc4random() % 256) / 255.0f;
+//    CGFloat blue = (arc4random() % 256) / 255.0f;
+//    [[UIColor colorWithRed:red green:green blue:blue alpha:1.0f] set];
+//    
+//    CGContextFillRect(context, frame);
+//    UIImage *image = UIGraphicsGetImageFromCurrentImageContext();
+//    UIGraphicsEndImageContext();
+//    return [image resizableImageWithCapInsets:UIEdgeInsetsMake(1.0f, 1.0f, 1.0f, 1.0f)];
+//}
 
 
 @interface QTStampView ()
 
 @property (nonatomic, strong) IBOutlet UIImageView *imageView;
+@property (nonatomic, strong) IBOutlet UIImageView *emoticonView;
 @property (nonatomic, strong) IBOutlet UILabel *typeLabel;
 
 - (void)handleTap:(UITapGestureRecognizer *)gestureRecognizer;
@@ -43,6 +44,7 @@ static inline UIImage * RandomColorImage(void) {
 @synthesize stamp = _stamp;
 @synthesize delegate = _delegate;
 @synthesize imageView = _imageView;
+@synthesize emoticonView = _emoticonView;
 @synthesize typeLabel = _typeLabel;
 
 
@@ -103,12 +105,30 @@ static inline UIImage * RandomColorImage(void) {
 #pragma mark - View Handling
 - (void)updateViews {
     UIImage *image = [[NSCache shared] objectForKey:self.stamp.imageFilename];
-    if (!image) {
-        image = RandomColorImage();
-    }
-    self.imageView.image = image;
     
     self.typeLabel.text = self.stamp.type;
+    
+    if (image) {
+        self.imageView.image = image;
+    } else {    
+        if ([self.stamp.type isEqualToString:QTStampTypeSmile])
+            self.emoticonView.image = [UIImage imageNamed:@"e_happy"];
+        else if ([self.stamp.type isEqualToString:QTStampTypeFrown])
+            self.emoticonView.image = [UIImage imageNamed:@"e_frown"];
+        else if ([self.stamp.type isEqualToString:QTStampTypeMeh])
+            self.emoticonView.image = [UIImage imageNamed:@"e_meh"];
+        else if ([self.stamp.type isEqualToString:QTStampTypeShocked])
+            self.emoticonView.image = [UIImage imageNamed:@"e_shocked"];
+        else if ([self.stamp.type isEqualToString:QTStampTypeFlirt])
+            self.emoticonView.image = [UIImage imageNamed:@"e_flirt"];
+        else
+            self.emoticonView.image = [UIImage imageNamed:@"e_other"];
+    }
+
+    
+    UIImageView *bgImage = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"stamp_bg"]];
+    bgImage.frame = CGRectMake(5, 5, 149, 129);
+    [self insertSubview:bgImage atIndex:0];
 }
 
 

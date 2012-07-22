@@ -55,13 +55,9 @@
     }
     
     for (int i = 0; i < [self.stamps count]; i++) {
-        Stamp *stamp = self.stamps[i];
+        Stamp *stamp = [self.stamps objectAtIndex:i];
         QTStampView *stampView;
-        if ([stamp.hasImage boolValue]) {
-            stampView = [[QTStampView alloc] initWithStamp:stamp];
-        } else {
-            stampView = [[QTDefaultStampView alloc] initWithStamp:stamp];
-        }
+        stampView = [[QTStampView alloc] initWithStamp:stamp];
         stampView.delegate = self;
         
         CGRect frame;
@@ -116,7 +112,7 @@
 }
 
 - (void)viewDidLoad {
-    
+    self.view.backgroundColor = [[UIColor alloc] initWithPatternImage:[UIImage imageNamed:@"qt_cell_bg"]];
     [super viewDidLoad];
 }
 

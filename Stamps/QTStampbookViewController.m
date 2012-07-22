@@ -47,12 +47,14 @@
 
 #pragma mark - New Stamps
 - (void)addNewStampForType:(NSString *)type {
+    self.imagePickerController = nil;
     self.imagePickerController = [[UIImagePickerController alloc] init];
     self.imagePickerController.delegate = self;
     self.imagePickerController.modalTransitionStyle = UIModalTransitionStyleCoverVertical;
     
     QTNewStampOverlayView *overlay = [[QTNewStampOverlayView alloc] initWithFrame:self.imagePickerController.view.frame];
     overlay.type = type;
+    [overlay setTypePrompt];
     
     if ([UIImagePickerController isSourceTypeAvailable:UIImagePickerControllerSourceTypeCamera]) {
         self.imagePickerController.sourceType = UIImagePickerControllerSourceTypeCamera;
@@ -87,12 +89,11 @@
 - (void)confirmImage:(ConfirmImageViewController *)controller didConfirmImage:(UIImage *)image {
     [self.navigationController popToViewController:self animated:YES];
     
-    NSString *filename = [@(arc4random()) stringValue];
+    NSString *filename = [NSString stringWithFormat:@"%d", arc4random()];
     [[NSCache shared] setObject:image forKey:filename];
     
-    _currentlyEditingStamp.type = @"Modified";
     _currentlyEditingStamp.imageFilename = [filename copy];
-    _currentlyEditingStamp.hasImage = @YES;
+    _currentlyEditingStamp.hasImage = [NSNumber numberWithBool:YES];
     
     NSInteger stampIndex = [self.stamps indexOfObject:_currentlyEditingStamp];
     NSInteger currentPageIndex = stampIndex / 6;
@@ -163,7 +164,7 @@
         return nil;
     }
     
-    return self.stampPages[index - 1];
+    return [self.stampPages objectAtIndex:(index - 1)];
 }
 
 - (UIViewController *)pageViewController:(UIPageViewController *)pageViewController viewControllerAfterViewController:(UIViewController *)viewController {
@@ -172,7 +173,7 @@
         return nil;
     }
     
-    return self.stampPages[index + 1];
+    return [self.stampPages objectAtIndex:(index + 1)];
 }
 
 
@@ -199,6 +200,10 @@
 }
 
 - (void)viewDidLoad {
+//    [self setAppearance];
+    
+//    self.view.backgroundColor = [[UIColor alloc] initWithPatternImage:[UIImage imageNamed:@"qt_cell_bg"]];
+    
     NSMutableArray *pages = [NSMutableArray arrayWithCapacity:ceil([self.stamps count] / 6.0f)];
     QTBatchArrayCursor *cursor = [[QTBatchArrayCursor alloc] initWithArray:self.stamps batchSize:QTBatchArraySizeStamps];
     while ([cursor hasNextBatch]) {
@@ -213,7 +218,7 @@
     self.pageController.view.frame = self.view.bounds;
     self.pageController.dataSource = self;
     self.pageController.delegate = self;
-    [self.pageController setViewControllers:@[self.stampPages[0]] direction:UIPageViewControllerNavigationDirectionForward animated:NO completion:NULL];
+    [self.pageController setViewControllers:[NSArray arrayWithObject:[self.stampPages objectAtIndex:0]] direction:UIPageViewControllerNavigationDirectionForward animated:NO completion:NULL];
     
     [self addChildViewController:self.pageController];
     [self.view addSubview:self.pageController.view];
@@ -221,6 +226,7 @@
     
     [super viewDidLoad];
 }
+
 
 - (void)viewWillAppear:(BOOL)animated {
     

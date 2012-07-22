@@ -21,10 +21,10 @@
     if ([userState isEqual:@"initialize"])
     {
 //        [self.infoLabel setText:@"Initialized."];
-        [self.liveClient login:self
-                        scopes:[NSArray arrayWithObjects:@"wl.signin", nil]
-                      delegate:self
-                     userState:@"signin"];
+//        [self.liveClient login:self
+//                        scopes:[NSArray arrayWithObjects:@"wl.signin", nil]
+//                      delegate:self
+//                     userState:@"signin"];
     }
     if ([userState isEqual:@"signin"])
     {

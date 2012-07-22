@@ -42,13 +42,17 @@
 
 #pragma mark - Countdown
 - (void)startCountdown {
-    self.secondsLeft = 3;
+    self.secondsLeft = 2;
     self.timer = [NSTimer scheduledTimerWithTimeInterval:1.0f target:self selector:@selector(timerFired:) userInfo:nil repeats:NO];
 }
 
 - (void)stopCountdown {
     [self.timer invalidate];
     self.timer = nil;
+}
+
+- (void) setTypePrompt {
+    self.promptLabel.text = [NSString stringWithFormat:@"Make your best %@ face!", self.type];
 }
 
 - (void)timerFired:(NSTimer *)timer {
@@ -85,6 +89,8 @@
     }
     return self;
 }
+
+
 
 - (id)initWithFrame:(CGRect)frame {
     return [self init];
